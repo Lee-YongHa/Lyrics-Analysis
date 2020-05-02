@@ -1,0 +1,1148 @@
+@charset "utf-8";
+/* Reset CSS --------------------------------------- */
+body,
+div,
+dl,
+dt,
+dd,
+ul,
+ol,
+li,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+pre,
+form,
+fieldset,
+input,
+textarea,
+p,
+blockquote,
+th,
+td,
+span,
+em {
+  padding: 0;
+  margin: 0;
+  letter-spacing: 0;
+}
+a {
+  color: #3c3e40;
+  text-decoration: none;
+}
+a:active,
+a:hover {
+  text-decoration: underline;
+}
+address,
+caption,
+cite,
+code,
+dfn,
+em,
+var {
+  font-style: normal;
+  font-weight: normal;
+}
+button,
+input {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: 0;
+  font-size: 100%;
+  vertical-align: baseline;
+  background: transparent;
+  cursor: pointer;
+  *overflow: visible;
+}
+table {
+  border-spacing: 0;
+}
+fieldset,
+img {
+  border: 0;
+}
+address,
+caption,
+cite,
+code,
+dfn,
+em,
+strong,
+th,
+var {
+  font-weight: normal;
+  font-style: normal;
+}
+strong {
+  font-weight: bold;
+}
+ol,
+ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+caption,
+th {
+  text-align: left;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: normal;
+  margin: 0;
+  padding: 0;
+  color: #444;
+}
+q:before,
+q:after {
+  content: '';
+}
+abbr,
+acronym {
+  border: 0;
+}
+.hide,
+legend,
+caption {
+  position: absolute !important;
+  width: 0;
+  height: 0;
+  font-size: 0;
+  line-height: 0;
+  overflow: hidden;
+  visibility: hidden;
+}
+/* Custom CSS --------------------------------------- */
+body {
+  font-family: 'Malgun Gothic', '맑은 고딕', Dotum, '돋움', arial, helvetica;
+  font-size: 100%;
+  color: #333;
+  /*color: rgba(0,0,0,0.5);*/
+}
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+menu,
+nav,
+section,
+main {
+  display: block;
+}
+/* 
+	CSS 크로스브라우징 
+*/
+/* 
+	텍스트 관련
+*/
+/* 
+	삼각형 만들기 
+*/
+/* 
+	CSS3 효과
+	=====
+	example)
+		elem {
+			.box_shadow(2px 2px 10px rgba(0,0,0,.2));
+		}
+*/
+/* 
+	CSS3 애니메이션 
+	=====
+	example)
+	.keyframes(fade-in;{
+		0% { opacity: 0; }
+		100% { opacity: 1; }
+	});
+	.animation(fade-in 0.2s linear infinite alternate)
+*/
+/* 
+	미디어쿼리
+	-----
+	example )
+		elem {
+			@media @mobile {
+				attr : value;
+	    }
+		}
+*/
+h1 {
+  font-weight: 700;
+  font-size: 40px;
+  position: relative;
+  letter-spacing: -0.5px;
+  line-height: normal;
+}
+h2 {
+  font-weight: 700;
+  font-size: 35px;
+  position: relative;
+}
+h3 {
+  font-weight: 700;
+  font-size: 25px;
+  position: relative;
+}
+h4 {
+  font-weight: 400;
+  font-size: 20px;
+  position: relative;
+}
+.blindText {
+  width: 0;
+  height: 0;
+  font-size: 0;
+  overflow: hidden;
+  text-indent: -9999px;
+}
+.line_sprite:before,
+.line_sprite:after {
+  background: #fff;
+  content: '';
+  display: block;
+  width: 10px;
+  height: 3px;
+  position: absolute;
+}
+.clearfx {
+  zoom: 1;
+}
+.clearfx:after {
+  content: ".";
+  display: block;
+  font-size: 0;
+  height: 0px;
+  line-height: 0;
+  clear: both;
+}
+.pt_0 {
+  padding-top: 0px !important;
+}
+.pt_30 {
+  padding-top: 30px !important;
+}
+.pt_60 {
+  padding-top: 60px !important;
+}
+.pt_90 {
+  padding-top: 90px !important;
+}
+.pb_30 {
+  padding-bottom: 30px !important;
+}
+.pb_60 {
+  padding-bottom: 60px !important;
+}
+.mt_0 {
+  margin-top: 0px !important;
+}
+.mt_30 {
+  margin-top: 30px !important;
+}
+.mt_60 {
+  margin-top: 60px !important;
+}
+.left_60 {
+  padding-left: 60px !important;
+}
+.fixed {
+  position: fixed !important;
+}
+.m_item {
+  display: none !important;
+}
+@media only screen and (max-width: 768px) {
+  .m_item {
+    display: block !important;
+  }
+}
+.pc_item {
+  display: block !important;
+}
+@media only screen and (max-width: 768px) {
+  .pc_item {
+    display: none !important;
+  }
+}
+html {
+  font-size: 16px;
+}
+@media only screen and (max-width: 768px) {
+  html {
+    font-size: 16px;
+  }
+}
+body {
+  color: #3c3e40;
+  -webkit-font-smoothing: antialiased;
+  word-wrap: break-word;
+  word-break: break-all;
+  line-height: normal;
+  letter-spacing: 0px;
+  font-size: 16px;
+}
+@media only screen and (max-width: 768px) {
+  body {
+    overflow: auto;
+  }
+}
+header {
+  display: block;
+  position: fixed;
+  width: 100%;
+  height: 34px;
+  padding: 0px;
+  z-index: 999;
+  background: #222;
+}
+header .logo {
+  position: relative;
+  height: 100%;
+  margin: 10px 0 0 15px;
+  float: left;
+  font-size: 0;
+  line-height: 0;
+}
+header .logo a {
+  display: inline-block;
+  width: 62px;
+  height: 15px;
+  background: url("https://images.joins.com/newsroom/common/logo_svg_new.svg") no-repeat;
+  background-size: contain;
+  text-indent: -9999px;
+}
+header .sns_share {
+  float: right;
+  position: relative;
+  margin: 5px 14px;
+  height: 25px;
+}
+header .sns_share li {
+  display: inline-block;
+  position: relative;
+  margin-right: 3px;
+  width: 25px;
+  height: 25px;
+}
+@media only screen and (max-width: 768px) {
+  header .sns_share li {
+    margin-right: 4px;
+  }
+}
+header .sns_share li:last-child {
+  margin-right: 0;
+}
+header .sns_share li a {
+  display: inline-block;
+  overflow: hidden;
+  width: 25px;
+  height: 25px;
+  text-indent: -99999px;
+  -webkit-transition: all 0.3s ease-out;
+  -moz-transition: all 0.3s ease-out;
+  -o-transition: all 0.3s ease-out;
+  -ms-transition: all 0.3s ease-out;
+  transition: all 0.3s ease-out;
+}
+header .sns_share li a.facebook {
+  background: url("https://images.joins.com/newsroom/common/j_special_icon.png") no-repeat;
+}
+header .sns_share li a.facebook:hover {
+  background: url("https://images.joins.com/newsroom/common/j_special_icon.png") no-repeat 0 -25px;
+}
+header .sns_share li a.twitter {
+  background: url("https://images.joins.com/newsroom/common/j_special_icon.png") no-repeat -25px 0;
+}
+header .sns_share li a.twitter:hover {
+  background: url("https://images.joins.com/newsroom/common/j_special_icon.png") no-repeat -25px -25px;
+}
+header .sns_share li a.kakao {
+  background: url("https://images.joins.com/newsroom/common/j_special_icon.png") no-repeat -50px 0;
+}
+header .sns_share li a.kakao:hover {
+  background: url("https://images.joins.com/newsroom/common/j_special_icon.png") no-repeat -50px -25px;
+}
+header .sns_share li a.comment {
+  background: url("https://images.joins.com/newsroom/common/j_special_icon.png") no-repeat -75px 0;
+}
+header .sns_share li a.comment:hover {
+  background: url("https://images.joins.com/newsroom/common/j_special_icon.png") no-repeat -75px -25px;
+}
+@media only screen and (max-width: 768px) {
+  header .sns_share li a {
+    width: 25px;
+    height: 25px;
+  }
+  header .sns_share li a.facebook {
+    background: url("https://images.joins.com/newsroom/common/j_special_icon.png") no-repeat 0 -40px;
+    background-size: 200px 200px;
+  }
+  header .sns_share li a.facebook:hover {
+    background: url("https://images.joins.com/newsroom/common/j_special_icon.png") no-repeat 0 -65px;
+    background-size: 200px 200px;
+  }
+  header .sns_share li a.twitter {
+    background: url("https://images.joins.com/newsroom/common/j_special_icon.png") no-repeat -25px -40px;
+    background-size: 200px 200px;
+  }
+  header .sns_share li a.twitter:hover {
+    background: url("https://images.joins.com/newsroom/common/j_special_icon.png") no-repeat -25px -65px;
+    background-size: 200px 200px;
+  }
+  header .sns_share li a.kakao {
+    background: url("https://images.joins.com/newsroom/common/j_special_icon.png") no-repeat -50px -40px;
+    background-size: 200px 200px;
+  }
+  header .sns_share li a.kakao:hover {
+    background: url("https://images.joins.com/newsroom/common/j_special_icon.png") no-repeat -50px -65px;
+    background-size: 200px 200px;
+  }
+  header .sns_share li a.comment {
+    background: url("https://images.joins.com/newsroom/common/j_special_icon.png") no-repeat -75px -40px;
+    background-size: 200px 200px;
+  }
+  header .sns_share li a.comment:hover {
+    background: url("https://images.joins.com/newsroom/common/j_special_icon.png") no-repeat -75px -65px;
+    background-size: 200px 200px;
+  }
+}
+header.white {
+  background: #fff;
+}
+header.gradient {
+  background: rgba(0, 0, 0, 0);
+  background: -moz-linear-gradient(top, rgba(0, 0, 0, 0.8) 0%, rgba(0, 0, 0, 0) 100%);
+  background: -webkit-gradient(linear, left bottom, left top, color-stop(0, rgba(0, 0, 0, 0.8)), color-stop(1, rgba(0, 0, 0, 0)));
+  background: -webkit-linear-gradient(top, rgba(0, 0, 0, 0.8) 0%, rgba(0, 0, 0, 0) 100%);
+  background: -o-linear-gradient(top, rgba(0, 0, 0, 0.8) 0%, rgba(0, 0, 0, 0) 100%);
+  background: -ms-linear-gradient(top, rgba(0, 0, 0, 0.8) 0%, rgba(0, 0, 0, 0) 100%);
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 0.8) 0%, rgba(0, 0, 0, 0) 100%);
+}
+header.gradient .logo a {
+  background: url("https://images.joins.com/newsroom/common/logo_svg_new_w.svg") no-repeat;
+  background-size: contain;
+}
+header.gradient .sns_share li a.facebook {
+  background: url("https://images.joins.com/newsroom/common/j_special_icon.png") no-repeat 0px -52px;
+}
+header.gradient .sns_share li a.facebook:hover {
+  background: url("https://images.joins.com/newsroom/common/j_special_icon.png") no-repeat 0 -25px;
+}
+header.gradient .sns_share li a.twitter {
+  background: url("https://images.joins.com/newsroom/common/j_special_icon.png") no-repeat -25px -52px;
+}
+header.gradient .sns_share li a.twitter:hover {
+  background: url("https://images.joins.com/newsroom/common/j_special_icon.png") no-repeat -25px -25px;
+}
+header.gradient .sns_share li a.kakao {
+  background: url("https://images.joins.com/newsroom/common/j_special_icon.png") no-repeat -50px -52px;
+}
+header.gradient .sns_share li a.kakao:hover {
+  background: url("https://images.joins.com/newsroom/common/j_special_icon.png") no-repeat -50px -25px;
+}
+header.gradient .sns_share li a.comment {
+  background: url("https://images.joins.com/newsroom/common/j_special_icon.png") no-repeat -75px -52px;
+}
+header.gradient .sns_share li a.comment:hover {
+  background: url("https://images.joins.com/newsroom/common/j_special_icon.png") no-repeat -75px -25px;
+}
+@media only screen and (max-width: 768px) {
+  header.gradient .sns_share li a.facebook {
+    background: url("https://images.joins.com/newsroom/common/j_special_icon.png") no-repeat 0px -90px;
+    background-size: 200px 200px;
+  }
+  header.gradient .sns_share li a.twitter {
+    background: url("https://images.joins.com/newsroom/common/j_special_icon.png") no-repeat -25px -90px;
+    background-size: 200px 200px;
+  }
+  header.gradient .sns_share li a.kakao {
+    background: url("https://images.joins.com/newsroom/common/j_special_icon.png") no-repeat -50px -90px;
+    background-size: 200px 200px;
+  }
+  header.gradient .sns_share li a.comment {
+    background: url("https://images.joins.com/newsroom/common/j_special_icon.png") no-repeat -75px -90px;
+    background-size: 200px 200px;
+  }
+}
+#wrap {
+  position: relative;
+}
+#wrap #contentArea .section {
+  position: relative;
+  width: 100%;
+  z-index: 1;
+}
+#wrap #contentArea .center_wrap {
+  width: 1024px;
+  margin: 0 auto;
+  text-align: left;
+}
+@media only screen and (max-width: 1024px) {
+  #wrap #contentArea .center_wrap {
+    width: 100%;
+  }
+}
+#wrap #contentArea .other_cont .center_wrap {
+  text-align: center;
+}
+.bg {
+  display: none;
+  position: fixed;
+  top: 0;
+  background: rgba(0, 0, 0, 0.7);
+  width: 100%;
+  height: 100%;
+  z-index: 100;
+}
+.byline {
+  position: relative;
+  width: 100%;
+  max-width: 1024px;
+  border: 1px solid #ebebeb;
+  background: #f8f8f8;
+  margin: 20px auto 20px;
+}
+@media only screen and (max-width: 768px) {
+  .byline {
+    max-width: 100%;
+    border-left: none;
+    border-right: none;
+  }
+}
+.byline .publish {
+  font-size: 11px;
+  color: #bebebe;
+  position: absolute;
+  top: -24px;
+  right: 4px;
+}
+.byline .inner_cont ul {
+  overflow: hidden;
+  margin: 0 auto;
+  padding: 20px;
+}
+.byline .inner_cont li {
+  display: inline-block;
+  padding: 10px 15px;
+  margin-left: 10px;
+  background: url(https://images.joins.com/newsroom/dataDate/dot.png) 5px 18px no-repeat;
+  color: #3c3e40;
+  font-size: 13px;
+  line-height: 18px;
+}
+.byline .inner_cont li strong {
+  font-weight: normal;
+}
+.byline .inner_cont li span {
+  padding-top: 4px;
+  color: #9a9a9a;
+}
+@media only screen and (max-width: 768px) {
+  .byline .inner_cont ul {
+    padding: 20px 10px;
+  }
+  .byline .inner_cont li {
+    display: block;
+    margin-left: 10px;
+    font-size: 14px;
+    padding: 4px 10px;
+    background: url("https://images.joins.com/newsroom/dataDate/dot.png") 0 14px no-repeat;
+  }
+  .byline .inner_cont li span {
+    display: inline-block;
+  }
+}
+.other_cont .center_wrap {
+  padding: 10px 0 10px;
+  text-align: center;
+  margin: 0 auto;
+  width: 100%;
+  max-width: 1024px;
+}
+@media only screen and (max-width: 768px) {
+  .other_cont .center_wrap {
+    max-width: 100%;
+    padding: 0 0 15px;
+    overflow: hidden;
+  }
+}
+.other_cont .center_wrap .title {
+  display: inline-block;
+  position: relative;
+  font-size: 16px;
+  line-height: 1.5;
+  text-align: center;
+  color: #878787;
+}
+.other_cont .center_wrap .title a:hover {
+  font-weight: bold;
+  text-decoration: none;
+}
+.other_cont .center_wrap .title:before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  right: 110%;
+  width: 100px;
+  height: inherit;
+  border-bottom: 1px solid #878787;
+}
+.other_cont .center_wrap .title:after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 110%;
+  width: 100px;
+  height: inherit;
+  border-bottom: 1px solid #878787;
+}
+@media only screen and (max-width: 768px) {
+  .other_cont .center_wrap .title {
+    display: block;
+    padding-left: 12px;
+    font-size: 15px;
+    text-align: left;
+  }
+  .other_cont .center_wrap .title:before {
+    content: none;
+  }
+  .other_cont .center_wrap .title:after {
+    content: none;
+  }
+}
+.other_cont .center_wrap .rolling_cont {
+  overflow: hidden;
+  text-align: center;
+  padding-top: 30px;
+}
+@media only screen and (max-width: 768px) {
+  .other_cont .center_wrap .rolling_cont {
+    margin: 0px 0px;
+    padding-top: 20px;
+    overflow: auto;
+  }
+}
+.other_cont .center_wrap .rolling_cont .item_wrap {
+  position: relative;
+  overflow: hidden;
+  -webkit-transition: all 0.3s ease-in-out;
+  -moz-transition: all 0.3s ease-in-out;
+  -o-transition: all 0.3s ease-in-out;
+  -ms-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+@media only screen and (max-width: 768px) {
+  .other_cont .center_wrap .rolling_cont .item_wrap {
+    width: 100%;
+    margin: 0 auto;
+  }
+}
+.other_cont .center_wrap .rolling_cont .item_wrap .item {
+  float: right;
+  margin-bottom: 20px;
+  background: #000;
+  width: 49.5%;
+  height: 140px;
+  overflow: hidden;
+  cursor: pointer;
+}
+.other_cont .center_wrap .rolling_cont .item_wrap .item:first-child {
+  float: left;
+  margin-left: 0px;
+}
+.other_cont .center_wrap .rolling_cont .item_wrap .item .dimd_cover {
+  position: absolute;
+  display: block;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.4);
+}
+.other_cont .center_wrap .rolling_cont .item_wrap .item .dimd_cover span {
+  position: relative;
+  color: #fff;
+  font-size: 16px;
+  top: 108px;
+}
+.other_cont .center_wrap .rolling_cont .item_wrap .item a {
+  position: relative;
+  display: block;
+  width: 100%;
+  height: inherit;
+  text-decoration: none;
+}
+.other_cont .center_wrap .rolling_cont .item_wrap .item a:hover img {
+  -webkit-transform: rotate(0deg) scale(1.1) skew(0deg) translate(0px);
+  -moz-transform: rotate(0deg) scale(1.1) skew(0deg) translate(0px);
+  -ms-transform: rotate(0deg) scale(1.1) skew(0deg) translate(0px);
+  -o-transform: rotate(0deg) scale(1.1) skew(0deg) translate(0px);
+  transform: rotate(0deg) scale(1.1) skew(0deg) translate(0px);
+}
+.other_cont .center_wrap .rolling_cont .item_wrap .item a img {
+  width: 100%;
+  height: auto;
+  -webkit-transition: all 0.3s ease-out;
+  -moz-transition: all 0.3s ease-out;
+  -o-transition: all 0.3s ease-out;
+  -ms-transition: all 0.3s ease-out;
+  transition: all 0.3s ease-out;
+}
+.other_cont .center_wrap .rolling_cont .item_wrap .item a .text_wrap {
+  position: absolute;
+  top: 40%;
+  width: 100%;
+  margin: 0 auto;
+}
+.other_cont .center_wrap .rolling_cont .item_wrap .item a .text_wrap .title_txt {
+  display: block;
+  color: #fff;
+  font-size: 16px;
+}
+@media only screen and (max-width: 1024px) {
+  .other_cont .center_wrap .rolling_cont .item_wrap .item {
+    margin-bottom: 4px;
+    height: 120px;
+  }
+  .other_cont .center_wrap .rolling_cont .item_wrap .item a .text_wrap {
+    top: 46%;
+  }
+  .other_cont .center_wrap .rolling_cont .item_wrap .item a .text_wrap .title_txt {
+    font-size: 15px;
+  }
+}
+@media only screen and (max-width: 768px) {
+  .other_cont .center_wrap .rolling_cont .item_wrap .item {
+    float: none;
+    margin: 0 auto;
+    width: 96%;
+    height: 80px;
+  }
+  .other_cont .center_wrap .rolling_cont .item_wrap .item:first-child {
+    float: none;
+    margin: 0 auto 2px;
+  }
+  .other_cont .center_wrap .rolling_cont .item_wrap .item a .text_wrap {
+    top: 40%;
+  }
+}
+#bottom {
+  margin: 0 auto ;
+  width: 1024px;
+  background: #fff;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+@media only screen and (max-width: 768px) {
+  #bottom {
+    width: 100%;
+    padding: 0 0px;
+  }
+}
+#footer {
+  position: relative;
+  padding: 30px 0;
+  z-index: 1000;
+  background: #191919;
+}
+@media only screen and (max-width: 1024px) {
+  #footer {
+    padding: 24px 0;
+  }
+}
+#footer .footerWrap {
+  width: 1024px;
+  margin: 0 auto;
+  color: #d9d9d9;
+  text-align: left;
+  font-size: 11px;
+}
+@media only screen and (max-width: 1024px) {
+  #footer .footerWrap {
+    width: 90%;
+  }
+}
+#footer .footerWrap .logoWrap {
+  float: left;
+  margin-left: 240px;
+}
+@media only screen and (max-width: 1024px) {
+  #footer .footerWrap .logoWrap {
+    margin-left: 0px;
+  }
+}
+#footer .footerWrap .logoWrap a.j_logo {
+  display: inline-block;
+  width: 70px;
+  height: 32px;
+  background: url("https://images.joins.com/newsroom/common/ci_footer.png") no-repeat 5px 4px;
+}
+@media only screen and (max-width: 1024px) {
+  #footer .footerWrap .logoWrap a.j_logo {
+    height: 24px;
+    background: url("https://images.joins.com/newsroom/common/ci_footer_m.png") no-repeat 0px 0px;
+    background-size: 61px;
+  }
+}
+#footer .footerWrap .footerCont {
+  float: left;
+  margin-left: 16px;
+}
+@media only screen and (max-width: 768px) {
+  #footer .footerWrap .footerCont {
+    margin-left: 0;
+    margin-top: 0px;
+  }
+}
+/***** 댓글 영역 *****/
+.comment-container {
+  font-family: Dotum, '돋움', 'Malgun Gothic', '맑은 고딕', 'Apple SD Gothic Neo', Arial, sans-serif;
+  position: relative;
+  background-color: #fff;
+  font-size: 12px;
+  z-index: 2;
+}
+.comment-container h3 {
+  font-weight: 700;
+}
+.comment-wrapper {
+  margin: 0 auto;
+  padding: 20px 0 30px;
+  width: 1024px;
+}
+@media only screen and (max-width: 1024px) {
+  .comment-wrapper {
+    width: 100%;
+  }
+}
+.comment-wrapper *,
+.comment-wrapper *:after,
+.comment-wrapper *:before {
+  -webkit-box-sizing: content-box;
+  -moz-box-sizing: content-box;
+  box-sizing: content-box;
+}
+.comment-wrapper button {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+.comment-wrapper-m {
+  width: 100% !important;
+}
+.comment_popup {
+  display: none;
+  position: fixed;
+  z-index: 10000;
+  background: #fff;
+  top: 0px;
+  left: 50%;
+  margin-left: -455px;
+  width: 910px;
+  opacity: 0;
+  -webkit-opacity: 0;
+  -moz-opacity: 0;
+  -ms-filter: progid:DXImageTransform.Microsoft.Alpha(opacity=(0));
+  -webkit-transform: translateY(-100px);
+  -moz-transform: translateY(-100px);
+  -ms-transform: translateY(-100px);
+  -o-transform: translateY(-100px);
+  transform: translateY(-100px);
+}
+.comment_popup.open {
+  display: block;
+  opacity: 1;
+  -webkit-opacity: 1;
+  -moz-opacity: 1;
+  -ms-filter: progid:DXImageTransform.Microsoft.Alpha(opacity=(100));
+  -webkit-transform: translateY(0);
+  -moz-transform: translateY(0);
+  -ms-transform: translateY(0);
+  -o-transform: translateY(0);
+  transform: translateY(0);
+}
+.comment_popup .tit {
+  padding: 40px 0 30px 40px;
+  font-size: 26px;
+  color: #231f20;
+  border-bottom: 1px solid #d6d6d6;
+  letter-spacing: -0.05em;
+}
+@media only screen and (max-width: 768px) {
+  .comment_popup .tit {
+    font-size: 20px;
+  }
+}
+.comment_popup .closeBtn {
+  position: absolute;
+  top: 40px;
+  right: 60px;
+  width: 25px;
+  height: 25px;
+  cursor: pointer;
+  z-index: 1000;
+  -webkit-transition: all 0.3s ease-in-out;
+  -moz-transition: all 0.3s ease-in-out;
+  -o-transition: all 0.3s ease-in-out;
+  -ms-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+.comment_popup .closeBtn .nav__x-svg {
+  -webkit-transition: all 0.2s ease-in-out;
+  -moz-transition: all 0.2s ease-in-out;
+  -o-transition: all 0.2s ease-in-out;
+  -ms-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+}
+.comment_popup .closeBtn:hover .nav__x-svg {
+  -webkit-transform: rotate(90deg);
+  -moz-transform: rotate(90deg);
+  -ms-transform: rotate(90deg);
+  -o-transform: rotate(90deg);
+  transform: rotate(90deg);
+}
+.comment_popup .comment-container {
+  font-family: Dotum, '돋움', 'Malgun Gothic', '맑은 고딕', 'Apple SD Gothic Neo', Arial, sans-serif;
+  overflow-y: auto;
+  width: 100%;
+}
+.comment_popup .comment-wrapper {
+  margin: 0 auto;
+  padding: 20px;
+  width: 820px;
+}
+@media only screen and (max-width: 768px) {
+  .comment_popup {
+    top: 0;
+    left: 0;
+    margin-left: 0;
+    width: 100%;
+    height: auto;
+  }
+  .comment_popup .tit {
+    padding: 40px 0 30px 20px;
+  }
+  .comment_popup .closeBtn {
+    right: 20px;
+  }
+}
+/***** 댓글 영역 *****/
+/* 더보기 리스트 */
+.m_list_wrap {
+  position: relative;
+  padding-bottom: 40px;
+  width: 100%;
+  background: #fff;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+@media only screen and (max-width: 768px) {
+  .m_list_wrap {
+    padding-bottom: 0;
+  }
+}
+.m_list_wrap > div {
+  min-width: 640px;
+  margin: 0 auto;
+  border: 1px solid #ebebeb;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+@media only screen and (max-width: 768px) {
+  .m_list_wrap > div {
+    border: none;
+    margin: 0 auto;
+    min-width: 100%;
+  }
+}
+.m_list_wrap h3 {
+  padding: 20px 20px 15px;
+  text-align: center;
+  font-size: 15px;
+  font-weight: normal;
+}
+@media only screen and (max-width: 768px) {
+  .m_list_wrap h3 {
+    padding: 30px 20px 15px;
+  }
+}
+.m_list_wrap .area {
+  background-color: #fff;
+  margin-bottom: 3px;
+  border-bottom: 1px solid #d2d2d2;
+}
+.m_list_wrap .btn_moreList {
+  display: block;
+  clear: both;
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+  margin-top: -4px;
+  background-color: #f4f5f6;
+  border-top: 1px solid #e1e1e1;
+}
+.m_list_wrap .btn_moreList span {
+  display: block;
+  width: 100%;
+  height: 50px;
+  margin-top: 15px;
+  background: url(https://images.joins.com/ui_joongang/news/mw/common/b_more.png) center 0 no-repeat;
+  background-size: 30px 100px;
+  text-indent: -9999px;
+}
+.m_list_wrap .btn_moreList:hover {
+  background-color: #e6e6e6;
+}
+.m_list_wrap .list_thumb {
+  overflow: hidden;
+  width: 100%;
+  padding: 0 35px;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+@media only screen and (max-width: 768px) {
+  .m_list_wrap .list_thumb {
+    padding: 0 5px;
+  }
+}
+.m_list_wrap .list_thumb li {
+  float: left;
+  width: 25%;
+  padding-top: 15px;
+  border-top: 1px solid #f5f5f5;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+@media only screen and (max-width: 768px) {
+  .m_list_wrap .list_thumb li {
+    width: 50%;
+  }
+}
+.m_list_wrap .list_thumb li a {
+  display: block;
+  margin-bottom: 15px;
+  padding: 0 5px;
+  color: #241815;
+  font-size: 13px;
+}
+.m_list_wrap .list_thumb li img {
+  max-width: 100%;
+  width: auto;
+  vertical-align: top;
+}
+.m_list_wrap .list_thumb li .thumb {
+  overflow: hidden;
+  position: relative;
+  display: block;
+  margin: 0 auto 5px;
+  width: 100%;
+  height: auto;
+}
+.m_list_wrap .list_thumb li .text {
+  overflow: hidden;
+  display: -webkit-box;
+  height: 32px;
+  margin: 0 auto;
+  font-weight: normal;
+  line-height: 16px;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  word-wrap: break-word;
+  text-overflow: ellipsis;
+  color: #241815;
+  text-align: left;
+}
+/* joongang.css 가져온 부분 (모바일) */
+.fulllayer {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  min-height: 100%;
+  background-color: rgba(32, 32, 32, 0.5);
+  z-index: 200;
+}
+.layeron {
+  display: block !important;
+}
+.more_type {
+  display: block;
+  height: 40px;
+  margin: 0 -20px;
+  background-color: #ebebeb;
+  border-top: 1px solid #d3d2d2;
+  line-height: 40px;
+  text-align: center;
+}
+.btn_close {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 45px;
+  height: 45px;
+  background: url("https://images.joins.com/ui_joongang/news/mw/common/i_head.png") no-repeat 9px -138px;
+  background-size: 25px 500px;
+  text-indent: -9999px;
+  z-index: 3;
+}
+.layer_login .tit_sub {
+  overflow: hidden;
+  height: 39px;
+  padding: 0 20px;
+  color: #241815;
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 46px;
+  background-color: #fff;
+}
+.layer_login .tit_sub:after {
+  content: ".";
+  clear: both;
+  display: block;
+  font-size: 0;
+  height: 0;
+  line-height: 0;
+}
+.ban_naver img {
+  display: block;
+  width: 100%;
+}
+.lnk_broccoli {
+  display: block;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin-top: -12px;
+  margin-left: -38px;
+  width: 76px;
+  height: 20px;
+  background: url("https://images.joins.com/newsroom/common/logo_broccoli.png") 0 0 / cover no-repeat;
+  font-size: 0;
+  color: transparent !important;
+  overflow: hidden;
+}
+@media only screen and (max-width: 768px) {
+  img {
+    max-width: 100%;
+  }
+}

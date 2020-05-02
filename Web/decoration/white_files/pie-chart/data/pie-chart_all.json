@@ -1,0 +1,442 @@
+{
+  "0": {
+    "amount":"1964",
+    "data": [
+      {"label":"남성", "value":"63"},
+      {"label":"여성", "value":"37"},
+      {"label":"혼성", "value":"0"}
+    ]
+    },
+  "1": {
+    "amount":"1965",
+    "data": [
+      {"label":"남성", "value":"36"},
+      {"label":"여성", "value":"63"},
+      {"label":"혼성", "value":"0"}
+    ]
+    },
+  "2": {
+    "amount":"1966",
+    "data": [
+      {"label":"남성", "value":"50"},
+      {"label":"여성", "value":"50"},
+      {"label":"혼성", "value":"0"}
+    ]
+  },
+  "3": {
+    "amount":"1967",
+    "data": [
+      {"label":"남성", "value":"50"},
+      {"label":"여성", "value":"50"},
+      {"label":"혼성", "value":"0"}
+    ]
+  },
+  "4": {
+    "amount":"1968",
+    "data": [
+      {"label":"남성", "value":"40"},
+      {"label":"여성", "value":"60"},
+      {"label":"혼성", "value":"0"}
+    ]
+  },
+  "5": {
+    "amount":"1969",
+    "data": [
+      {"label":"남성", "value":"46"},
+      {"label":"여성", "value":"54"},
+      {"label":"혼성", "value":"0"}
+    ]
+  },
+  "6": {
+    "amount":"1970",
+    "data": [
+      {"label":"남성", "value":"44"},
+      {"label":"여성", "value":"54"},
+      {"label":"혼성", "value":"2"}
+    ]
+},
+  "7": {
+    "amount":"1971",
+    "data": [
+      {"label":"남성", "value":"44"},
+      {"label":"여성", "value":"52"},
+      {"label":"혼성", "value":"0"}
+    ]
+},
+  "8": {
+  "amount":"1972",
+  "data": [
+    {"label":"남성", "value":"54"},
+    {"label":"여성", "value":"46"},
+    {"label":"혼성", "value":"0"}
+  ]
+},
+  "9": {
+  "amount":"1973",
+  "data": [
+    {"label":"남성", "value":"51"},
+    {"label":"여성", "value":"47"},
+    {"label":"혼성", "value":"2"}
+  ]
+},
+  "10": {
+  "amount":"1974",
+  "data": [
+    {"label":"남성", "value":"55"},
+    {"label":"여성", "value":"43"},
+    {"label":"혼성", "value":"2"}
+  ]
+},
+  "11": {
+  "amount":"1975",
+  "data": [
+    {"label":"남성", "value":"67"},
+    {"label":"여성", "value":"31"},
+    {"label":"혼성", "value":"2"}
+  ]
+},
+  "12": {
+  "amount":"1976",
+  "data": [
+    {"label":"남성", "value":"72"},
+    {"label":"여성", "value":"26"},
+    {"label":"혼성", "value":"2"}
+  ]
+},
+  "13": {
+  "amount":"1977",
+  "data": [
+    {"label":"남성", "value":"54"},
+    {"label":"여성", "value":"46"},
+    {"label":"혼성", "value":"0"}
+  ]
+},
+  "14": {
+  "amount":"1978",
+  "data": [
+    {"label":"남성", "value":"54"},
+    {"label":"여성", "value":"4"},
+    {"label":"혼성", "value":"6"}
+  ]
+},
+  "15": {
+  "amount":"1979",
+  "data": [
+    {"label":"남성", "value":"47"},
+    {"label":"여성", "value":"46"},
+    {"label":"혼성", "value":"7"}
+  ]
+},
+  "16": {
+  "amount":"1980",
+  "data": [
+    {"label":"남성", "value":"52"},
+    {"label":"여성", "value":"46"},
+    {"label":"혼성", "value":"2"}
+  ]
+},
+  "17": {
+  "amount":"1981",
+  "data": [
+    {"label":"남성", "value":"64"},
+    {"label":"여성", "value":"34"},
+    {"label":"혼성", "value":"2"}
+  ]
+},
+  "18": {
+  "amount":"1982",
+  "data": [
+    {"label":"남성", "value":"58"},
+    {"label":"여성", "value":"3"},
+    {"label":"혼성", "value":"2"}
+  ]
+},
+  "19": {
+  "amount":"1983",
+  "data": [
+    {"label":"남성", "value":"44"},
+    {"label":"여성", "value":"5"},
+    {"label":"혼성", "value":"6"}
+  ]
+},
+  "20": {
+  "amount":"1984",
+  "data": [
+    {"label":"남성", "value":"6"},
+    {"label":"여성", "value":"38"},
+    {"label":"혼성", "value":"2"}
+  ]
+},
+  "21": {
+  "amount":"1985",
+  "data": [
+    {"label":"남성", "value":"56"},
+    {"label":"여성", "value":"36"},
+    {"label":"혼성", "value":"8"}
+  ]
+},
+  "22": {
+  "amount":"1986",
+  "data": [
+    {"label":"남성", "value":"55"},
+    {"label":"여성", "value":"36"},
+    {"label":"혼성", "value":"9"}
+  ]
+},
+  "23": {
+    "amount":"1987",
+    "data": [
+      {"label":"남성", "value":"65"},
+      {"label":"여성", "value":"32"},
+      {"label":"혼성", "value":"3"}
+    ]
+  },
+  "24": {
+    "amount":"1988",
+    "data": [
+      {"label":"남성", "value":"68"},
+      {"label":"여성", "value":"27"},
+      {"label":"혼성", "value":"5"}
+    ]
+  },
+  "25": {
+    "amount":"1989",
+    "data": [
+      {"label":"남성", "value":"7"},
+      {"label":"여성", "value":"29"},
+      {"label":"혼성", "value":"1"}
+    ]
+  },
+  "26": {
+    "amount":"1990",
+    "data": [
+      {"label":"남성", "value":"7"},
+      {"label":"여성", "value":"27"},
+      {"label":"혼성", "value":"3"}
+    ]
+  },
+  "27": {
+    "amount":"1991",
+    "data": [
+      {"label":"남성", "value":"71"},
+      {"label":"여성", "value":"28"},
+      {"label":"혼성", "value":"0`"}
+    ]
+  },
+  "28": {
+    "amount":"1992",
+    "data": [
+      {"label":"남성", "value":"73"},
+      {"label":"여성", "value":"27"},
+      {"label":"혼성", "value":"0"}
+    ]
+  },
+  "29": {
+    "amount":"1993",
+    "data": [
+      {"label":"남성", "value":"81"},
+      {"label":"여성", "value":"15"},
+      {"label":"혼성", "value":"4"}
+    ]
+  },
+  "30": {
+    "amount":"1994",
+    "data": [
+      {"label":"남성", "value":"78"},
+      {"label":"여성", "value":"13"},
+      {"label":"혼성", "value":"9"}
+    ]
+  },
+  "31": {
+    "amount":"1995",
+    "data": [
+      {"label":"남성", "value":"82"},
+      {"label":"여성", "value":"12"},
+      {"label":"혼성", "value":"6"}
+    ]
+  },
+  "32": {
+    "amount":"1996",
+    "data": [
+      {"label":"남성", "value":"77"},
+      {"label":"여성", "value":"16"},
+      {"label":"혼성", "value":"7"}
+    ]
+  },
+  "33": {
+    "amount":"1997",
+    "data": [
+      {"label":"남성", "value":"70"},
+      {"label":"여성", "value":"20"},
+      {"label":"혼성", "value":"10"}
+    ]
+  },
+  "34": {
+    "amount":"1998",
+    "data": [
+      {"label":"남성", "value":"68"},
+      {"label":"여성", "value":"26"},
+      {"label":"혼성", "value":"6"}
+    ]
+  },
+  "35": {
+    "amount":"1999",
+    "data": [
+      {"label":"남성", "value":"59"},
+      {"label":"여성", "value":"30"},
+      {"label":"혼성", "value":"11"}
+    ]
+  },
+  "36": {
+    "amount":"2000",
+    "data": [
+      {"label":"남성", "value":"61"},
+      {"label":"여성", "value":"31"},
+      {"label":"혼성", "value":"8"}
+    ]
+  },
+  "37": {
+    "amount":"2001",
+    "data": [
+      {"label":"남성", "value":"67"},
+      {"label":"여성", "value":"29"},
+      {"label":"혼성", "value":"4"}
+    ]
+  },
+  "38": {
+    "amount":"2002",
+    "data": [
+      {"label":"남성", "value":"57"},
+      {"label":"여성", "value":"28"},
+      {"label":"혼성", "value":"15"}
+    ]
+  },
+  "39": {
+    "amount":"2003",
+    "data": [
+      {"label":"남성", "value":"58"},
+      {"label":"여성", "value":"36"},
+      {"label":"혼성", "value":"6"}
+    ]
+  },
+  "40": {
+    "amount":"2004",
+    "data": [
+      {"label":"남성", "value":"65"},
+      {"label":"여성", "value":"25"},
+      {"label":"혼성", "value":"1"}
+    ]
+  },
+  "41": {
+    "amount":"2005",
+    "data": [
+      {"label":"남성", "value":"68"},
+      {"label":"여성", "value":"26"},
+      {"label":"혼성", "value":"6"}
+    ]
+  },
+  "42": {
+    "amount":"2006",
+    "data": [
+      {"label":"남성", "value":"61"},
+      {"label":"여성", "value":"35"},
+      {"label":"혼성", "value":"4"}
+    ]
+  },
+  "43": {
+    "amount":"2007",
+    "data": [
+      {"label":"남성", "value":"56"},
+      {"label":"여성", "value":"40"},
+      {"label":"혼성", "value":"4"}
+    ]
+  },
+  "44": {
+    "amount":"2008",
+    "data": [
+      {"label":"남성", "value":"66"},
+      {"label":"여성", "value":"32"},
+      {"label":"혼성", "value":"2"}
+    ]
+  },
+  "45": {
+    "amount":"2009",
+    "data": [
+      {"label":"남성", "value":"54"},
+      {"label":"여성", "value":"43"},
+      {"label":"혼성", "value":"3"}
+    ]
+  },
+  "46": {
+    "amount":"2010",
+    "data": [
+      {"label":"남성", "value":"51"},
+      {"label":"여성", "value":"48"},
+      {"label":"혼성", "value":"1"}
+    ]
+  },
+  "47": {
+    "amount":"2011",
+    "data": [
+      {"label":"남성", "value":"54"},
+      {"label":"여성", "value":"46"},
+      {"label":"혼성", "value":"0"}
+    ]
+  },
+  "48": {
+    "amount":"2012",
+    "data": [
+      {"label":"남성", "value":"59"},
+      {"label":"여성", "value":"38"},
+      {"label":"혼성", "value":"3"}
+    ]
+  },
+  "49": {
+    "amount":"2013",
+    "data": [
+      {"label":"남성", "value":"44"},
+      {"label":"여성", "value":"50"},
+      {"label":"혼성", "value":"6"}
+    ]
+  },
+  "50": {
+    "amount":"2014",
+    "data": [
+      {"label":"남성", "value":"53"},
+      {"label":"여성", "value":"43"},
+      {"label":"혼성", "value":"4"}
+    ]
+  },
+  "51": {
+    "amount":"2015",
+    "data": [
+      {"label":"남성", "value":"60"},
+      {"label":"여성", "value":"38"},
+      {"label":"혼성", "value":"2"}
+    ]
+  },
+  "52": {
+    "amount":"2016",
+    "data": [
+      {"label":"남성", "value":"49"},
+      {"label":"여성", "value":"45"},
+      {"label":"혼성", "value":"6"}
+    ]
+  },
+  "53": {
+    "amount":"2017",
+    "data": [
+      {"label":"남성", "value":"50"},
+      {"label":"여성", "value":"44"},
+      {"label":"혼성", "value":"6"}
+    ]
+  },
+  "54": {
+    "amount":"2018",
+    "data": [
+      {"label":"남성", "value":"54"},
+      {"label":"여성", "value":"45"},
+      {"label":"혼성", "value":"1"}
+    ]
+  }
+}

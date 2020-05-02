@@ -1,0 +1,93 @@
+<html>
+<head>
+    <meta charset="UTF-8" />
+    <title>Highcharts Bar Chart</title>
+    <script src="http://apps.bdimg.com/libs/jquery/2.1.4/jquery.min.js"></script>
+    <script src="http://code.highcharts.com/highcharts.js"></script>
+</head>
+<body>
+<div id="container" style="width: 1000px; height: 500px; margin: 0 auto"></div>
+<script language="JavaScript">
+    $(document).ready(function() {
+        var chart = {
+            type: 'line'
+        };
+        var title = {
+            text: 'Monthly Average Rainfall'
+        };
+        var subtitle = {
+            text: 'Source: WorldClimate.com'
+        };
+        var xAxis = {
+            categories: ['Jan','Feb','Mar','Apr','May','Jun','Jul','Aug','Sep','Oct','Nov','Dec']
+        };
+        var yAxis = {
+            min: 0,
+            title: {
+                text: 'Rainfall (mm)',
+                align: 'high'
+            },
+            labels: {
+                overflow: 'justify'
+            }
+        };
+        var tooltip = {
+            valueSuffix: ' millions'
+        };
+        var plotOptions = {
+            bar: {
+                dataLabels: {
+                    enabled: true
+                }
+            }
+        };
+        var legend = {
+            layout: 'vertical',
+            align: 'right',
+            verticalAlign: 'top',
+            x: -10,
+            y: 60,
+            floating: true,
+            borderWidth: 1,
+            backgroundColor: ((Highcharts.theme && Highcharts.theme.legendBackgroundColor) || '#FFFFFF'),
+            shadow: true
+        };
+        var credits = {
+            enabled: false
+        };
+        var series= [{
+            name: 'Tokyo',
+            data: [49.9, 71.5, 106.4, 129.2, 144.0, 176.0, 135.6, 148.5, 216.4, 194.1, 95.6, 54.4]
+
+        }, {
+            name: 'New York',
+            data: [83.6, 78.8, 98.5, 93.4, 106.0, 84.5, 105.0, 104.3, 91.2, 83.5, 106.6, 92.3]
+
+        }, {
+            name: 'London',
+            data: [48.9, 38.8, 39.3, 41.4, 47.0, 48.3, 59.0, 59.6, 52.4, 65.2, 59.3, 51.2]
+
+        }, {
+            name: 'Berlin',
+            data: [42.4, 33.2, 34.5, 39.7, 52.6, 75.5, 57.4, 60.4, 47.6, 39.1, 46.8, 51.1]
+
+        }
+        ];
+
+        var json = {};
+        json.chart = chart;
+        json.title = title;
+        json.subtitle = subtitle;
+        json.tooltip = tooltip;
+        json.xAxis = xAxis;
+        json.yAxis = yAxis;
+        json.series = series;
+        json.plotOptions = plotOptions;
+        json.legend = legend;
+        json.credits = credits;
+        $('#container').highcharts(json);
+
+    });
+</script>
+</body>
+</html>

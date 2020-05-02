@@ -1,0 +1,127 @@
+<html>
+<head>
+    <meta charset="UTF-8" />
+    <title>Highcharts Bar Chart</title>
+    <script src="http://apps.bdimg.com/libs/jquery/2.1.4/jquery.min.js"></script>
+    <script src="http://code.highcharts.com/highcharts.js"></script>
+</head>
+<body>
+<div id="container" style="width: 1000px; height: 500px; margin: 0 auto"></div>
+<script language="JavaScript">
+    
+    function timechanger(times) {
+        var time = times.value;
+        var mins1=Math.floor(time / 60);
+        var sec1=time - mins1 * 60;
+        return mins1 + '분' + sec1 + '초';
+    }
+    
+    $(document).ready(function() {
+        var chart = {
+            type: 'line'
+        };
+        var title = {
+            text: ''
+        };
+        var subtitle = {
+            text: ''
+        };
+        var xAxis = {
+            type: 'datetime',
+            labels: {
+                format: '{value:%Y년}',
+                align: 'right',
+                rotation: -30,
+                style: {
+				    fontSize: '14px',
+				    color: 'black'
+			    },
+            }
+        };
+        var yAxis = [{// Primary yAxis
+            min: 170,
+            max: 255,
+            title: {
+                text: '재생시간',
+                align: 'high'
+            },
+            labels: {
+                formatter: function () {
+                    var time = this.value;
+                    var mins1=Math.floor(time / 60);
+                    var sec1=time - mins1 * 60;
+                    return mins1 + '분' + sec1 + '초';
+                },
+            }
+        }, {
+            min: 0.5,
+            max: 3.5,
+            title: {// Scondary yAxis
+                text: '재생시간(초)당 음절',
+                align: 'high',
+            },
+            labels: {
+                overflow: 'justify',
+            },
+        opposite: true
+        }];
+       
+        var tooltip = {
+            xDateFormat: '%Y'+'년',
+            shared:true,
+            crosshairs:true,
+        };
+        var plotOptions = {
+            series: {
+            pointStart: Date.UTC(1964),
+            pointInterval: 24 * 3600 * 1000 * 31 *12 // one year
+            }
+        };
+        var legend = {
+            layout: 'vertical',
+            align: 'left',
+            verticalAlign: 'top',
+            x: 70,
+            y: 60,
+            floating: true,
+            borderWidth: 0,
+            backgroundColor: ((Highcharts.theme && Highcharts.theme.legendBackgroundColor) || 'rgba(255,255,255,0.25)'),
+            shadow: false
+        };
+        var credits = {
+            enabled: false
+        };
+        var series= [{
+            yAxis: 0,
+            name: '재생시간',
+            data: [175.0,175.0,174.0,178.0,181.0,180.0,179.0,184.0,191.0,186.0,202.0,184.0,191.0,198.0,212.0,206.0,211.0,214.0,204.0,213.0,227.0,225.0,225.0,235.0,240.0,244.0,240.0,248.0,243.0,249.0,248.0,248.0,252.0,247.0,251.0,246.0,246.0,252.0,246.0,243.0,244.0,244.0,241.0,241.0,232.0,221.0,219.0,219.0,224.0,219.0,225.0,214.0,223.0,217.0,230.0],
+            tooltip: {
+                valueSuffix:'초'
+            },
+        }, {
+            name: '재생시간(초)당 음절',
+            yAxis: 1,
+            data: [0.8,0.77,0.71,0.72,0.69,0.77,0.87,0.86,0.8,1.08,0.97,0.92,0.81,0.81,0.82,0.93,0.85,0.87,0.93,1.04,0.87,0.98,0.93,0.97,0.91,0.92,0.95,0.96,1.06,1.12,1.17,1.33,1.39,1.57,1.55,1.91,1.85,1.88,2.14,2.16,2.21,2.2,2.21,2.13,2.52,3.21,3.32,3.07,2.95,2.8,2.65,3.12,2.65,2.76,2.58],
+            tooltip: {
+                valueSuffix:'개'
+            },
+        }
+        ];
+
+        var json = {};
+        json.chart = chart;
+        json.title = title;
+        json.subtitle = subtitle;
+        json.tooltip = tooltip;
+        json.xAxis = xAxis;
+        json.yAxis = yAxis;
+        json.series = series;
+        json.plotOptions = plotOptions;
+        json.legend = legend;
+        json.credits = credits;
+        $('#container').highcharts(json);
+
+    });
+</script>
+</body>
+</html>

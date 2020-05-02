@@ -1,0 +1,567 @@
+@charset "utf-8";
+/* 
+	CSS 크로스브라우징 
+*/
+/* 
+	텍스트 관련
+*/
+/* 
+	삼각형 만들기 
+*/
+/* 
+	CSS3 효과
+	=====
+	example)
+		elem {
+			.box_shadow(2px 2px 10px rgba(0,0,0,.2));
+		}
+*/
+/* 
+	CSS3 애니메이션 
+	=====
+	example)
+	.keyframes(fade-in;{
+		0% { opacity: 0; }
+		100% { opacity: 1; }
+	});
+	.animation(fade-in 0.2s linear infinite alternate)
+*/
+/* 
+	미디어쿼리
+	-----
+	example )
+		elem {
+			@media @mobile {
+				attr : value;
+	    }
+		}
+*/
+::selection {
+  color: #fff;
+  background: #016468;
+}
+::-moz-selection {
+  color: #fff;
+  background: #016468;
+}
+body {
+  overflow-x: hidden;
+  word-wrap: break-word;
+  word-break: break-all;
+  line-height: normal;
+  font-family: Avenir, 'Lato', "애플 SD 산돌고딕 Neo", "Apple SD Gothic Neo", "나눔바른고딕", NanumBarunGothic, "나눔고딕", NanumGothic, "맑은 고딕", "Malgun Gothic", "돋움", dotum, AppleGothic, sans-serif;
+  font-size: 16px;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+header {
+  top: 0;
+}
+main {
+  width: 100%;
+  position: relative;
+  padding-top: 30px;
+  overflow-x: hidden;
+}
+main .topArea {
+  text-indent: -999em;
+  width: 100%;
+}
+main .topArea .title {
+  width: 100%;
+  height: 415px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  background: url("https://github.com/14ryu/19-1Conference/blob/master/web_files/wide_banner.jpg?raw=true");
+}
+@media only screen and (max-width: 1024px) {
+  main .topArea .title {
+    height: 340px;
+    background: url("https://github.com/14ryu/19-1Conference/blob/master/web_files/banner.jpg?raw=true") 0 0 / cover no-repeat;
+  }
+}
+main .contentWrap {
+  width: 950px;
+  margin: 0px auto 70px;
+  text-align: center;
+}
+@media only screen and (max-width: 768px) {
+  main .contentWrap {
+    width: 100%;
+  }
+}
+main .contentWrap.open p.hideText {
+  height: auto;
+  opacity: 1;
+  -webkit-opacity: 1;
+  -moz-opacity: 1;
+  -ms-filter: progid:DXImageTransform.Microsoft.Alpha(opacity=(100));
+}
+
+@media only screen and (max-width: 1024px) {
+  main .contentWrap.part {
+    padding: 0;
+    border: none;
+  }
+}
+main .contentWrap.part p {
+  margin-bottom: 8px;
+}
+main .contentWrap.part p.hideText {
+  margin-bottom: 30px;
+}
+main .contentWrap.intro {
+  margin: 50px auto 0px;
+  width: 800px;
+}
+main .contentWrap.intro h1 {
+  margin: 0 0 40px;
+  font-size: 2.5rem;
+}
+main .contentWrap.intro p.pointText {
+  color: #1c57a3;
+}
+main .contentWrap.intro p.pointText span {
+  font-weight: 0;
+  background: #1c57a3;
+  color: #fff;
+  padding: 2px 5px;
+  font-size: 0.94rem;
+}
+@media only screen and (max-width: 1024px) {
+  main .contentWrap.intro {
+    width: 100%;
+    margin: 50px auto 50px;
+  }
+  main .contentWrap.intro h1 {
+    font-size: 2rem;
+    padding: 0 20px;
+  }
+}
+main .contentWrap.intro:after {
+  display: block;
+  margin: 30px auto 0;
+  height: 70px;
+  width: 0px;
+  content: '';
+  background: #b155b1;
+}
+main .contentWrap.lastPage {
+  margin: 0px auto 80px;
+  text-align: left;
+}
+main .contentWrap.lastPage figure {
+  margin: 80px auto 0;
+  width: 100%;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+main .contentWrap.lastPage figure p {
+  font-size: 1.3rem;
+  line-height: 1.8rem;
+  padding: 0;
+  text-align: center;
+}
+main .contentWrap.lastPage figure img {
+  width: 100%;
+}
+main .contentWrap.lastPage figure figcaption {
+  padding: 0 10px 10px;
+  font-size: .9rem;
+  color: #000777;
+}
+@media only screen and (max-width: 1024px) {
+  main .contentWrap.lastPage figure {
+    padding: 0 20px;
+  }
+  main .contentWrap.lastPage figure p {
+    font-size: 1.2rem;
+    line-height: 1.4rem;
+  }
+}
+main .contentWrap.lastPage .lastText {
+  margin-top: 90px;
+  font-size: 2rem;
+  line-height: 2.8rem;
+  text-align: center;
+  font-weight: 100;
+}
+main .contentWrap.lastPage em {
+  font-size: 0.9rem;
+  color: #555;
+  display: block;
+}
+@media only screen and (max-width: 1024px) {
+  main .contentWrap.lastPage .lastText {
+    margin-top: 70px;
+    padding: 0 20px;
+    font-size: 1.5rem;
+    line-height: 2rem;
+  }
+  main .contentWrap.lastPage .lastText,
+  main .contentWrap.lastPage em {
+    padding: 0 20px;
+  }
+}
+main h3 {
+  font-weight: normal;
+  color: #333;
+  text-align: center;
+  font-size: 1.8rem;
+  font-weight: bold;
+  margin: 1.2rem 0 1.6rem;
+}
+@media only screen and (max-width: 768px) {
+  main h3 {
+    font-size: 1.5rem;
+    margin: .5rem 0 1.2rem;
+  }
+}
+main h3.subTitle::before {
+  display: block;
+  margin: 0 auto 16px;
+  height: 5px;
+  width: 20px;
+  content: '';
+  /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#e6e6e6+51,4d4e7c+51 */
+  background: #4d4e7c;
+  /* Old browsers */
+  background: -moz-linear-gradient(left, #e6e6e6 51%, #4d4e7c 51%);
+  /* FF3.6-15 */
+  background: -webkit-linear-gradient(left, #e6e6e6 51%, #4d4e7c 51%);
+  /* Chrome10-25,Safari5.1-6 */
+  background: linear-gradient(to right, #e6e6e6 51%, #4d4e7c 51%);
+  /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+}
+main h3.active.subTitle::before {
+  -webkit-transition: all 0.5s ease-in-out;
+  -moz-transition: all 0.5s ease-in-out;
+  -o-transition: all 0.5s ease-in-out;
+  -ms-transition: all 0.5s ease-in-out;
+  transition: all 0.5s ease-in-out;
+  -webkit-transform: rotate(180deg);
+  -moz-transform: rotate(180deg);
+  -ms-transform: rotate(180deg);
+  -o-transform: rotate(180deg);
+  transform: rotate(180deg);
+}
+main p {
+  display: block;
+  color: #333;
+  font-size: 1rem;
+  word-wrap: break-word;
+  word-break: normal;
+  text-align: justify;
+  line-height: 1.6rem;
+  margin: 1.2rem auto;
+  max-width: 720px;
+}
+main p > img {
+  width: 100%;
+}
+@media only screen and (max-width: 1024px) {
+  main p {
+    padding: 0 22px;
+  }
+}
+main p.hideText {
+  background: #484654;
+  color: #fff;
+  padding: 20px;
+  opacity: 0;
+  -webkit-opacity: 0;
+  -moz-opacity: 0;
+  -ms-filter: progid:DXImageTransform.Microsoft.Alpha(opacity=(0));
+  margin-top: 0;
+  height: 0;
+}
+@media only screen and (max-width: 1024px) {
+  main p.hideText {
+    margin: 0 16px;
+    padding: 10px 14px;
+  }
+}
+main p,
+main h3,
+main h4,
+main img {
+  -webkit-transition: all 0.5s ease-in-out;
+  -moz-transition: all 0.5s ease-in-out;
+  -o-transition: all 0.5s ease-in-out;
+  -ms-transition: all 0.5s ease-in-out;
+  transition: all 0.5s ease-in-out;
+  -webkit-transform: translateY(18px);
+  -moz-transform: translateY(18px);
+  -ms-transform: translateY(18px);
+  -o-transform: translateY(18px);
+  transform: translateY(18px);
+}
+main p.active,
+main h3.active,
+main h4.active,
+main img.active {
+  -webkit-transform: translateY(0);
+  -moz-transform: translateY(0);
+  -ms-transform: translateY(0);
+  -o-transform: translateY(0);
+  transform: translateY(0);
+}
+.chartWrap {
+  width: inherit;
+  min-height: 400px;
+}
+@media only screen and (max-width: 1024px) {
+  .chartWrap {
+    min-height: auto;
+  }
+}
+.chartWrap .chart svg .realLine .graphLine {
+  position: relative;
+  fill: none;
+}
+.chartWrap .chart svg .realLine .circlePoint {
+  -webkit-transition: opacity 0.3s ease;
+  -moz-transition: opacity 0.3s ease;
+  -o-transition: opacity 0.3s ease;
+  -ms-transition: opacity 0.3s ease;
+  transition: opacity 0.3s ease;
+}
+.chartWrap .chart svg .realLine .circlePoint.dimd {
+  opacity: 0;
+  -webkit-opacity: 0;
+  -moz-opacity: 0;
+  -ms-filter: progid:DXImageTransform.Microsoft.Alpha(opacity=(0));
+}
+.chartWrap .chart svg .realLine .numText {
+  fill: #222;
+  font-weight: bold;
+  font-size: 12px;
+  -webkit-transition: all 0.3s ease-in-out;
+  -moz-transition: all 0.3s ease-in-out;
+  -o-transition: all 0.3s ease-in-out;
+  -ms-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+.chartWrap .chart svg .realLine .numText.dimd {
+  transform: translateY(10px);
+  opacity: 0;
+  -webkit-opacity: 0;
+  -moz-opacity: 0;
+  -ms-filter: progid:DXImageTransform.Microsoft.Alpha(opacity=(0));
+}
+.chartWrap .chart svg .grid_Xnum {
+  -webkit-transition: all 0.2s ease-out;
+  -moz-transition: all 0.2s ease-out;
+  -o-transition: all 0.2s ease-out;
+  -ms-transition: all 0.2s ease-out;
+  transition: all 0.2s ease-out;
+}
+.chartWrap .chart svg .grid_Xnum.dimd {
+  opacity: 0;
+}
+.chartWrap .chart svg .grid_Xnum.dimd.active {
+  opacity: 1;
+  fill: black;
+}
+.chartWrap .chart svg .grid_line {
+  stroke: #c4c8d6;
+  stroke-width: 1px;
+  stroke-dasharray: 2,4;
+  shape-rendering: crispEdges;
+}
+.chartWrap .chart svg .grid_line.startLine {
+  stroke: #414141;
+  stroke-width: 1px;
+}
+.chartWrap .chart svg .grid_line.active {
+  stroke: black;
+  stroke-width: 1px;
+}
+.chartWrap .chart svg .grid_line.axis {
+  stroke: #424f57;
+  stroke-width: 3px;
+  stroke-dasharray: 0;
+}
+.chartWrap .chart svg .drawAreaWrap .tooltip {
+  -webkit-animation: ani 1.5s linear infinite;
+  -moz-animation: ani 1.5s linear infinite;
+  -ms-animation: ani 1.5s linear infinite;
+  -o-animation: ani 1.5s linear infinite;
+  animation: ani 1.5s linear infinite;
+}
+@-webkit-keyframes ani {
+  0% {
+    opacity: 0.2;
+    -webkit-opacity: 0.2;
+    -moz-opacity: 0.2;
+    -ms-filter: progid:DXImageTransform.Microsoft.Alpha(opacity=(20));
+  }
+  40% {
+    opacity: 1;
+    -webkit-opacity: 1;
+    -moz-opacity: 1;
+    -ms-filter: progid:DXImageTransform.Microsoft.Alpha(opacity=(100));
+  }
+  100% {
+    opacity: 0.2;
+    -webkit-opacity: 0.2;
+    -moz-opacity: 0.2;
+    -ms-filter: progid:DXImageTransform.Microsoft.Alpha(opacity=(20));
+  }
+}
+@-moz-keyframes ani {
+  0% {
+    opacity: 0.2;
+    -webkit-opacity: 0.2;
+    -moz-opacity: 0.2;
+    -ms-filter: progid:DXImageTransform.Microsoft.Alpha(opacity=(20));
+  }
+  40% {
+    opacity: 1;
+    -webkit-opacity: 1;
+    -moz-opacity: 1;
+    -ms-filter: progid:DXImageTransform.Microsoft.Alpha(opacity=(100));
+  }
+  100% {
+    opacity: 0.2;
+    -webkit-opacity: 0.2;
+    -moz-opacity: 0.2;
+    -ms-filter: progid:DXImageTransform.Microsoft.Alpha(opacity=(20));
+  }
+}
+@-ms-keyframes ani {
+  0% {
+    opacity: 0.2;
+    -webkit-opacity: 0.2;
+    -moz-opacity: 0.2;
+    -ms-filter: progid:DXImageTransform.Microsoft.Alpha(opacity=(20));
+  }
+  40% {
+    opacity: 1;
+    -webkit-opacity: 1;
+    -moz-opacity: 1;
+    -ms-filter: progid:DXImageTransform.Microsoft.Alpha(opacity=(100));
+  }
+  100% {
+    opacity: 0.2;
+    -webkit-opacity: 0.2;
+    -moz-opacity: 0.2;
+    -ms-filter: progid:DXImageTransform.Microsoft.Alpha(opacity=(20));
+  }
+}
+@-o-keyframes ani {
+  0% {
+    opacity: 0.2;
+    -webkit-opacity: 0.2;
+    -moz-opacity: 0.2;
+    -ms-filter: progid:DXImageTransform.Microsoft.Alpha(opacity=(20));
+  }
+  40% {
+    opacity: 1;
+    -webkit-opacity: 1;
+    -moz-opacity: 1;
+    -ms-filter: progid:DXImageTransform.Microsoft.Alpha(opacity=(100));
+  }
+  100% {
+    opacity: 0.2;
+    -webkit-opacity: 0.2;
+    -moz-opacity: 0.2;
+    -ms-filter: progid:DXImageTransform.Microsoft.Alpha(opacity=(20));
+  }
+}
+@keyframes ani {
+  0% {
+    opacity: 0.2;
+    -webkit-opacity: 0.2;
+    -moz-opacity: 0.2;
+    -ms-filter: progid:DXImageTransform.Microsoft.Alpha(opacity=(20));
+  }
+  40% {
+    opacity: 1;
+    -webkit-opacity: 1;
+    -moz-opacity: 1;
+    -ms-filter: progid:DXImageTransform.Microsoft.Alpha(opacity=(100));
+  }
+  100% {
+    opacity: 0.2;
+    -webkit-opacity: 0.2;
+    -moz-opacity: 0.2;
+    -ms-filter: progid:DXImageTransform.Microsoft.Alpha(opacity=(20));
+  }
+}
+.chartWrap .chart.open .drawAreaWrap path {
+  stroke: #eee;
+}
+.chartWrap .chart.open .drawAreaWrap .drawArea {
+  -webkit-transition: opacity 0.5s ease-in;
+  -moz-transition: opacity 0.5s ease-in;
+  -o-transition: opacity 0.5s ease-in;
+  -ms-transition: opacity 0.5s ease-in;
+  transition: opacity 0.5s ease-in;
+  opacity: 0;
+  -webkit-opacity: 0;
+  -moz-opacity: 0;
+  -ms-filter: progid:DXImageTransform.Microsoft.Alpha(opacity=(0));
+}
+.chartWrap .chart.open .drawAreaWrap .tooltip {
+  display: none;
+}
+.chartWrap button.openBtn {
+  position: relative;
+  -webkit-border-radius: 6px;
+  -moz-border-radius: 6px;
+  border-radius: 6px;
+  padding: 10px 48px;
+  font-size: 1rem;
+  font-weight: bold;
+  -webkit-transition: all 0.2s ease;
+  -moz-transition: all 0.2s ease;
+  -o-transition: all 0.2s ease;
+  -ms-transition: all 0.2s ease;
+  transition: all 0.2s ease;
+  background: #484654;
+  color: #fff;
+}
+.chartWrap button.openBtn.dimd {
+  visibility: none;
+  padding-top: 0;
+  padding-bottom: 0;
+  opacity: 0;
+  -webkit-opacity: 0;
+  -moz-opacity: 0;
+  -ms-filter: progid:DXImageTransform.Microsoft.Alpha(opacity=(0));
+}
+.chartWrap button.openBtn:hover {
+  background: #24232a;
+}
+.chartWrap button.openBtn:active {
+  -webkit-transform: translate(2px, 2px);
+  -moz-transform: translate(2px, 2px);
+  -ms-transform: translate(2px, 2px);
+  -o-transform: translate(2px, 2px);
+  transform: translate(2px, 2px);
+}
+.byline {
+  max-width: 900px;
+  margin: 36px auto 20px;
+}
+@media only screen and (max-width: 1024px) {
+  .byline {
+    margin: 0px auto 20px;
+  }
+}
+.other_cont .center_wrap {
+  max-width: 900px;
+}
+.comment-wrapper {
+  max-width: 900px;
+}
+
+.top_title {
+  color:white;
+  margin-top: 10px;
+  margin-left: 10px;
+}

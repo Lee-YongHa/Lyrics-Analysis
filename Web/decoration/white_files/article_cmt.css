@@ -1,0 +1,154 @@
+﻿@charset 'utf-8';
+
+textarea {border:none;color:#838383;overflow:hidden;resize:none;}
+/* common */
+.hide {display:block;position:absolute;left:-9999px;width:1px;height:1px;font-size:0;line-height:0;overflow:hidden;text-indent:-9999px;}
+.comment_area .subtit_comm {font-size:15px;line-height:22px;}
+.comment_area .subtit_comm span {color:#f33d33;}
+.comment_area .hd p,.comment_form textarea,.logout_area button,.cmt_info p,.cmt_info .btn_reply,.cmt_info .date,.cmt_info .btn_report {font-family:Tahoma,Dotum,'돋움',sans-serif;*font-family:Dotum,'돋움',sans-serif;}
+
+/* 댓글 영역 */
+.comment_area {width:100%;}
+.comment_area .hd {position:relative;padding-bottom:17px;border-bottom:1px solid #586873;}
+#content .comment_area .subtit_comm span {display:inline-block;*display:inline;zoom:1;margin-left:4px;color:#f33d33;}
+.comment_area .hd p {position:absolute;top:9px;right:0;color:#c5c5c5;font-size:11px;}
+.comment_area .hd p a{color:#c5c5c5;}
+.comment_form {position:relative;padding:25px 26px 20px 24px;background-color:#f4f5f6;border:1px solid #e1e1e1;border-top:none;}
+.comment_form form {position:relative;}
+.comment_form textarea {width:100%;height:50px;color:#3c3e40;font-size:12px;line-height:1.5;}
+.cont_textarea {height:67px;padding:7px 11px;background-color:#fff;border:1px solid #a9aeb1;}
+.comment_form .cont {position:relative;padding:0 83px 0 2px;}
+.comment_form .count {position:absolute;bottom:7px;right:95px;color:#c5c5c5;}
+.comment_form .btn_submit {position:absolute;top:0;right:0;width:84px;height:83px;background-color:#fff;border:1px solid #96add6;color:#5d81c3;font-weight:bold;font-size:15px;letter-spacing:-0.05em;}
+.comment_form .nick_img {display:none;margin:17px 0 0 -1px;}
+.comment_login .cont {padding:0 83px 0 65px;}
+.comment_login .nick_img {display:block;}
+
+.select_sns dd a,.select_sns .sns_cmt_fb label .icon,.select_sns .sns_cmt_fb input.checked +  label .icon,.nick_img .frame,.comment_form .nick_img .frame,.cmt_area .btn_recomm a,.cmt_info dt strong a,.cmt_info .btn_report,.cmt_info .btn_delete,.cmt_info .btn_reply,.comment_area .ft a .icon,.cmt_info dt strong{background:url('https://images.joins.com/ui_joongang/news/pc/article/k_comment.png') 0 0 no-repeat}
+
+.select_sns {margin-bottom:26px;overflow:hidden;}
+.select_sns dl {float:left;overflow:hidden;}
+.select_sns dd {float:left;height:24px;margin-right:6px;}
+.select_sns dd a {display:block;width:24px;height:24px;line-height:999px;overflow:hidden;vertical-align:top;}
+.select_sns dd.i_js a {width:26px;}
+.select_sns dd.i_tw a {background-position:-32px 0;}
+.select_sns dd.i_fb a {background-position:-62px 0;}
+.select_sns dd.i_kk a {background-position:-92px 0;}
+.select_sns dd.i_js a.on {background-position:0 -34px;}
+.select_sns dd.i_tw a.on {background-position:-32px -34px;}
+.select_sns dd.i_fb a.on {background-position:-62px -34px;}
+.select_sns dd.i_kk a.on {background-position:-92px -34px;}
+.select_sns .sns_cmt {float:left;margin:1px 0 0 10px;color:#3c3e40;font-size:14px;line-height:21px;letter-spacing:-0.02em;}
+.select_sns .sns_cmt_fb {float:left;position:relative;margin:3px 0 0 11px;}
+.select_sns .sns_cmt_fb input {position:absolute;top:0;left:0;width:13px;height:13px;opacity:0;-ms-filter:alpha(opacity=0);filter:alpha(opacity=0);}
+.select_sns .sns_cmt_fb label {margin-left:25px;color:#a9b1b9;font-weight:bold;font-size:12px;line-height:18px;cursor:pointer;letter-spacing:-0.02em;}
+.select_sns .sns_cmt_fb label .icon {display:block;position:absolute;top:2px;left:0;width:15px;height:15px;margin-right:5px;background-position:0 -68px;vertical-align:middle;}
+.select_sns .sns_cmt_fb input.checked +  label .icon {background-position:-25px -68px;}
+.select_sns .sns_cmt_elec{float:left;position:relative;margin:3px 0 0 0;}
+.select_sns .sns_cmt_elec input{display:none;}
+.select_sns .sns_cmt_elec label{margin:0;color:#a9b1b9;font-weight:bold;font-size:12px;line-height:18px;cursor:pointer;letter-spacing:-0.02em;}
+
+.list_sort {height:38px;border-left:1px solid #e1e1e1;border-right:1px solid #e1e1e1;border-bottom:1px solid #d6d6d6;}
+.list_sort ul {margin-left:-1px;overflow:hidden;}
+.list_sort li {float:left;width:80px;font-size:13px;line-height:19px;font-weight:bold;text-align:center;}
+.list_sort li a {display:block;padding:9px 0 10px;color:#737475;}
+.list_sort li.on {width:78px;border-left:1px solid #d6d6d6;border-right:1px solid #d6d6d6;background:#fff;}
+.list_sort li.on a {padding:9px 0 11px;color:#5d81c3;}
+
+.comment_list {border-left:1px solid #e1e1e1;border-right:1px solid #e1e1e1;}
+.comment_list li {border-bottom:1px solid #ebebeb;}
+.comment_list li:first-child .comment {border-top:none;}
+
+.cmt_wrap {position:relative;padding:0 0 11px 0;overflow:hidden;}
+.cmt_wrap .cmt_area,.reply_area {position:relative;margin-left:89px;}
+.cmt_wrap .cmt_area {padding:20px 39px 0 2px;}
+.cmt_wrap .comment_form {margin-top:8px;margin-left:89px;margin-right:39px;padding:0;border:none;background:none;}
+.cmt_wrap .comment_form .cont {padding-left:0;}
+
+.nick_img {float:left;position:relative;z-index:1;width:50px;height:50px;margin:17px 0 0 23px;overflow:hidden;}
+.nick_img img {width:50px;min-height:50px;}
+.nick_img .frame {display:block;position:absolute;top:0;left:0;width:50px;height:50px;background-position:-50px -93px;}
+.comment_form .nick_img .frame {background-position:0 -93px;}
+
+.cmt_area {position:relative;padding:20px 17px 15px;zoom:1;}
+.cmt_area .btn_recomm {position:absolute;top:14px;right:28px;overflow:hidden;}
+.cmt_area .btn_recomm a {float:left;width:41px;padding-left:16px;background-position:0 -237px;font-size:11px;line-height:17px;}
+.cmt_area .btn_recomm .up {color:#f33d33;}
+.cmt_area .btn_recomm .down {background-position:0 -257px;color:#737475;}
+
+.cmt_info {padding-right:60px;}
+.cmt_info dt {padding-bottom:8px;}
+.cmt_info dt strong {display:inline-block;*display:inline;margin-right:5px;font-size:15px;line-height:22px;vertical-align:top;zoom:1;}
+.cmt_info dt strong a {display:block;height:22px;padding-left:28px;background-position:0 -150px;}
+.cmt_info dt .i_tw a {background-position:0 -180px;}
+.cmt_info dt .i_fb a {background-position:0 -209px;}
+.cmt_info dt .i_kk a {background-position:-50px -64px;}
+.cmt_info dd {position:relative;padding-left:2px;}
+.cmt_info .date {display:inline-block;*display:inline;margin-top:4px;color:#b7b7b7;font-size:12px;line-height:18px;vertical-align:top;zoom:1;}
+.cmt_info p {margin-bottom:7px;color:#3c3e40;line-height:20px;}
+.cmt_info .btn_report {display:inline-block;*display:inline;zoom:1;margin-top:5px;margin-left:4px;padding-left:8px;background-position:-149px -277px;color:#b7b7b7;font-size:11px;line-height:17px;vertical-align:middle;}
+.cmt_info .btn_delete {display:inline-block;width:13px;height:13px;background-position:-19px -280px;line-height:999px;overflow:hidden;vertical-align:middle;}
+.cmt_info .btn_reply {display:block;width:56px;height:18px;padding-top:2px;background-position:-40px -280px;color:#5d81c3;font-size:11px;line-height:16px;text-align:center;overflow:hidden;}
+:root .cmt_info .btn_reply {height:16px\0/IE9;padding-top:4px\0/IE9;}
+
+.reply_area {margin-right:39px;margin-bottom:6px;border-top:1px solid #ebebeb;}
+.reply_area li {margin-bottom:-1px;border-bottom:none;}
+.reply_area .cmt_area {padding:12px 0 4px 30px;background:url('https://images.joins.com/ui_joongang/news/pc/article/u_reply.gif') 14px 20px no-repeat;}
+.reply_area .cmt_info dt {padding-bottom:5px;}
+.reply_area .cmt_area .btn_recomm {right:-11px;}
+
+.form_rt {position:absolute;top:29px;right:26px;z-index:2;}
+.form_rt {zoom:1;}
+.form_rt:after {content:".";display:block;font-size:0;height:0px;line-height:0;clear:both;}
+
+.logout_area {float:left;margin-right:5px;padding:2px 4px 0 0;color:#a9b1b9;font-size:11px;}
+.logout_area button {margin-right:5px;color:#a9b1b9;font-size:11px;line-height:13px;}
+
+.social_comment {float:left;position:relative;z-index:2;}
+.social_comment > a {display:block;height:20px;color:#3c3e40;font-size:12px;line-height:18px;letter-spacing:-0.02em;}
+.layer_social_comment {position:absolute;top:20px;right:0;width:342px;height:179px;border:1px solid #cac9c9;background-color:#fff;-webkit-box-shadow:4px 3px 6px rgba(0,0,0,.15);-moz-box-shadow:4px 3px 6px rgba(0,0,0,.15);box-shadow:4px 3px 6px rgba(0,0,0,.15);}
+.layer_social_comment dl {padding-top:23px;}
+.layer_social_comment dt {display:block;color:#3c3e40;font-weight:bold;font-size:16px;line-height:24px;letter-spacing:-0.07em;text-align:center;}
+.layer_social_comment dd {margin-top:14px;color:#959494;font-weight:normal;font-size:13px;line-height:20px;letter-spacing:-0.05em;text-align:center;}
+.layer_social_comment dd .icon {display:block;width:11px;height:1px;margin:0 auto 13px;background:#a9b1b9;overflow:hidden;}
+.layer_social_comment dd em {color:#3c3e40;font-weight:bold;}
+
+.comment_area .ft {margin-top:-1px;border:1px solid #e1e1e1;font-size:13px;line-height:19px;}
+.comment_area .ft a {display:block;padding:12px 0;color:#221815;font-weight:bold;text-align:center;}
+.comment_area .ft a em {color:#f33d33;font-weight:bold;}
+.comment_area .ft a .icon {display:inline-block;*display:inline;width:11px;height:5px;background-position:0 -295px;vertical-align:middle;}
+
+/* 2017-04-06 댓글 대선 실명확인 노출 문구 */
+.election_comment .select_sns .sns_cmt{margin-left:6px;letter-spacing:-2px}
+.election_comment .social_comment a{letter-spacing:-1px;line-height:13px;}
+.election_comment .logout_area{padding-top:0;}
+.election_comment .cont_textarea{position:relative;}
+.election_comment .cont_textarea .dsc{position:absolute;top:10px;left:15px;color:#838383;font-size:12px;word-break:keep-all;word-wrap:break-word;}
+.election_comment .layer_social_comment{width:309px;height:auto;padding:28px 40px;}
+.election_comment .layer_social_comment dd{font-size:13px;line-height:20px;color:#959494;}
+.election_comment .layer_social_comment dd strong{color:#3c3e40;}
+.election_comment .layer_social_comment dl{padding-top:0;}
+.election_comment .layer_social_comment .login_area{display:block;margin-top:24px;}
+.election_comment .layer_social_comment .login_area a{position:relative;font-size:13px;color:#2f2e2e;}
+.election_comment .layer_social_comment .login_area a:first-child:after{display:inline-block;content:"|";padding:0 10px;font-size:13px;color:#c8cdd2;}
+
+.comment_form .notice {margin:15px 0 0 0;font-size:14px;line-height:21px;letter-spacing:-0.02em;}
+
+/* 0820 로그인 사용자 이미지 노출 영역 삭제 */
+.comment_login .nick_img{display:none;}
+.comment_login .cont{padding:0 83px 0 2px;}
+.cmt_wrap .cmt_area,.comment_list .comment_form,.comment_list .reply_area{margin-left:0;}
+.cmt_wrap .cmt_area{padding-right:0;}
+.cmt_wrap .comment_form,.comment_list .reply_area{margin-right:0;}
+.cmt_area .btn_recomm,.reply_area .cmt_area .btn_recomm{right:-30px;}
+.comment_list li{margin-left:26px;margin-right:26px;}
+.reply_area li{margin-left:0;margin-right:0;}
+.comment_list .cmt_info{padding-right:0;}
+.comment_list .nick_img{display:none;}
+.cmt_info dt strong {padding-left:24px;background-position:0 -150px;}
+.cmt_info dt .i_js{padding-left:0;background:none;}
+.cmt_info dt .i_tw {background-position:0 -180px;}
+.cmt_info dt .i_fb {background-position:0 -209px;}
+.cmt_info dt .i_kk {background-position:-50px -64px;}
+.comment_list > ul li:last-child{border-bottom:none;}
+.comment_list > ul{border-bottom:1px solid #ebebeb;}

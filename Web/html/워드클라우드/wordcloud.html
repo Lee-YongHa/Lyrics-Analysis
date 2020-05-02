@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+    <script src="http://d3js.org/d3.v5.min.js" charset="utf-8"></script>
+    <script src="d3.layout.cloud.js"></script>
+    <script src="https://unpkg.com/d3-simple-slider"></script>
+    <script src="http://code.jquery.com/jquery-latest.js"></script>
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <!--<link rel="stylesheet" href="//cdn.jsdelivr.net/font-nanum/1.0/nanumbarungothic/nanumbarungothic.css">
+    <meta charset="UTF-8">
+    <title>Title</title> -->
+    <style>
+        div.btn-group{
+            position: relative;
+            bottom: -50px;
+            left: 40px;
+        }
+        div.col-sm-2{
+            display: none;
+        }
+        div.align-items-center{
+            position: relative;
+            left: 230px;
+
+        }
+    </style>
+</head>
+<body>
+
+    <div class="btn-group btn-group-toggle" data-toggle="buttons">
+        <label id='category_all' onclick="update_cat('category_all')" class="btn btn-outline-primary active">
+            <input type="radio" name="options" id="option1" autocomplete="off" checked> 전체
+        </label>
+        <label id='category_male' onclick="update_cat('category_male')" class="btn btn-outline-primary">
+            <input type="radio" name="options" id="option2" autocomplete="off"> 남성
+        </label>
+        <label id='category_female' onclick="update_cat('category_female')" class="btn btn-outline-primary">
+            <input type="radio" name="options" id="option3" autocomplete="off"> 여성
+        </label>
+    </div>
+
+    <div class="row align-items-center">
+        <div class="col-sm-2">
+           <p id="value-simple"></p>
+        </div>
+        <div class="col-sm"><div id="slider-simple"></div></div>
+    </div>
+
+    <div id="chart"></div>
+    <script type="text/javascript">
+
+
+
+
+
+        // Simple slider
+        var data = [1964, 1970, 1980, 1990, 2000, 2010, 2018];
+
+        var sliderSimple = d3
+            .sliderBottom()
+            .min(d3.min(data))
+            .max(d3.max(data))
+            .width(450)
+            .tickFormat(d3.format(".4r"))
+            .ticks(7)
+            .default(1990)
+            .on('onchange', function(val) {
+                d3.select('p#value-simple').text(d3.format(".4r")(val));
+                var name = d3.select(".active").attr("id");
+                selectYear = d3.select('p#value-simple').text();
+                if (name === "category_male") {
+                    updatewc_year_male(selectYear, "male");
+                } else if (name === "category_female") {
+                    updatewc_year_female(selectYear, "female");
+                } else {
+                    updatewc_year_all(selectYear, "All");
+                }
+
+            });
+
+        var yearsize = d3.select('.parameter-value').select('text')
+        yearsize.style.fontSize = '25px'
+
+
+
+        var gSimple = d3
+            .select('div#slider-simple')
+            .append('svg')
+            .attr('width', 700)
+            .attr('height', 100)
+            .append('g')
+            .attr('transform', 'translate(30,30)');
+
+        gSimple.call(sliderSimple);
+
+        d3.select('p#value-simple').text(d3.format(".4r")(sliderSimple.value()));
+
+
+
+        //var selectYear = d3.select('p#value-simple').text(d3.format(".4r")(sliderSimple.value())).text();
+
+
+        //Wordcloud
+        d3.csv('https://raw.githubusercontent.com/14ryu/19-1Conference/master/year_all_lyrics.csv')
+            .then( function(data) {
+                    for(var i =0; i<data.length; i++){
+                        if(data[i].year === '1990'){
+                            var limit=10;
+                            drawWordCloud(data[i].lyrics ,limit);
+                        }
+                    }
+                }
+            );
+
+
+
+        function drawWordCloud(text_string,limit){
+
+            var stopwords = ['사랑','정도','그냥','것', '곳','듯', '때', '저', '뭐', '데', '거', '지', '나', '수', '위', '정말', '모든','더','원','격','기','어떤',
+                '일단','함','있지만','등등','여서','젤','게', '그거', '건', '개', '무슨', '같다','흠','중','막','편','그','위','은근',
+                '가끔','실제','만','입니다','있던데', '있다','없다','이건','인지','여기','이','또','단','있으나','하다', '이다', '보다','그렇다',
+                '거야', '되다', '돼다', '기다', '인가', '하고','마다','아무','대다','않다','에서','되어다','부터','하리','해도','위해',
+                '나땜','에게','말고','처럼','하고','나다','싶다','으로','대다','아무','거야','만을','만큼','지만', '만이', '무엇', '나르다',
+                '아아', '조차', '만의','어느', '니까', '밖에', '마다', '말고', '에겐', '만은', '이나', '이라','이야','에는','까지','~~','..','...'];
+
+            var word_count = {};
+            //console.log(text_string);
+            var words = text_string.split(/[ '()":;\[\]]/);
+
+
+            if (words.length === 1){
+                word_count[words[0]] = 1;
+            } else {
+                words.forEach(function (word) {
+                    if (word !== "" && stopwords.indexOf(word)===-1 && word.length > 1) {
+                        if (word_count[word]) {
+                            word_count[word]++;
+                        } else {
+                            word_count[word] = 1;
+                        }
+                    }
+                });
+
+                for (var word in word_count) {
+                        if (word_count[word] < limit) delete word_count[word];
+                }
+            }
+
+
+            var svg_location = "#chart";
+            var width = 700,
+                height = 400;
+            var fill = d3.scaleOrdinal(d3.schemeCategory10);
+
+            var word_entries = d3.entries(word_count);
+            var xScale = d3.scaleLinear()
+                .domain([0, d3.max(word_entries, function(d) {
+                    return d.value;
+                })
+                ])
+                .range([10,100]);
+
+            d3.layout.cloud().size([width, height])
+                .timeInterval(20)
+                .words(word_entries)
+                .padding(4)
+                .fontSize(function(d) { return xScale(+d.value); })
+                .text(function(d) { return d.key; })
+                .rotate(function() { return ~~(Math.random() * 2) * 90; })
+                .font("NanumBarunGothic")
+                .on("end", draw)
+                .start();
+
+            function draw(words) {
+                d3.select(svg_location).append("svg")
+                    .attr("width", width)
+                    .attr("height", height)
+                    .append("g")
+                    .attr("transform", "translate(" + [width >> 1, height >> 1] + ")")
+                    .selectAll("text")
+                    .data(words)
+                    .enter().append("text")
+                    .style("font-size", function(d) { return xScale(d.value) + "px"; })
+                    .style("font-family", "NanumBarunGothic")
+                    .style("fill", function(d, i) { return fill(i); })
+                    .attr("text-anchor", "middle")
+                    .attr("transform", function(d) {
+                        return "translate(" + [d.x, d.y] + ")rotate(" + d.rotate + ")";
+                    })
+                    .text(function(d) { return d.key; });
+            }
+            //d3.layout.cloud().stop();
+        }
+
+
+        //=============================update wordclouds
+        function updatewc_year_all(number, dbg=''){
+            console.log(dbg)
+            d3.csv('https://raw.githubusercontent.com/14ryu/19-1Conference/master/year_all_lyrics.csv')
+                .then( function(data) {
+                        for(var i =0; i<data.length; i++){
+                            if(data[i].year === number){
+                                $('#chart').empty();
+                                var limit = 5 + (number-1960)**2*0.01
+                                drawWordCloud(data[i].lyrics, limit);
+                            }
+                        }
+                    }
+                );
+
+        }
+
+
+        function updatewc_year_male(number, dbg=""){
+            console.log(dbg)
+            d3.csv('https://raw.githubusercontent.com/14ryu/19-1Conference/master/year_male_lyric_stopwords.csv')
+                .then( function(data) {
+                    console.log(data)
+                        for(var i =0; i<data.length; i++){
+                            if(data[i].year === number){
+                                $('#chart').empty();
+                                var limit = 5 + (number-1960)**2*0.01
+                                drawWordCloud(data[i].male_lyric_stopwords, limit);
+                            }
+                        }
+                    }
+                );
+
+        }
+
+
+        function updatewc_year_female(number, dbg=""){
+            console.log(dbg)
+            d3.csv('https://raw.githubusercontent.com/14ryu/19-1Conference/master/year_female_lyric_stopwords.csv')
+                .then( function(data) {
+                        for(var i =0; i<data.length; i++){
+                            if(data[i].year === number){
+                                $('#chart').empty();
+                                var limit = 5 + (number-1960)*0.1
+                                drawWordCloud(data[i].female_lyric_stopwords, limit);
+                            }
+                        }
+                    }
+                );
+
+        }
+
+        function update_cat(category) {
+            console.log(category + 'clicked~!~!');
+
+            if(category === 'category_all'){
+                // d3.csv('https://raw.githubusercontent.com/14ryu/19-1Conference/master/year_all_lyrics.csv')
+                //     .then( function(data) {
+                //         for(var i =0; i<data.length; i++){
+                //             if(data[i].year === d3.select('p#value-simple').text()){
+                //                 $('#chart').empty();
+                //                 var limit = 5 + (d3.select('p#value-simple').text()-1960)**2*0.01
+                //                 drawWordCloud(data[i].lyrics, limit);}}});
+
+                var y = d3.select('p#value-simple').text();
+                updatewc_year_all(y, "from update_cat, all")
+
+
+            }
+            if(category === 'category_male'){
+                // d3.csv('https://raw.githubusercontent.com/14ryu/19-1Conference/master/year_male_lyric_stopwords.csv')
+                //     .then( function(data) {
+                //         for(var i =0; i<data.length; i++){
+                //             if(data[i].year === d3.select('p#value-simple').text()){
+                //                 $('#chart').empty();
+                //                 var limit = 5 + (d3.select('p#value-simple').text()-1960)**2*0.01
+                //                 drawWordCloud(data[i].male_lyric_stopwords ,limit);
+                //             }
+                //         }
+                //     });
+
+                var y = d3.select('p#value-simple').text();
+                updatewc_year_male(y, "from update_cat, male");
+
+            }
+            else{
+                // d3.csv('https://raw.githubusercontent.com/14ryu/19-1Conference/master/year_female_lyric_stopwords.csv')
+                //     .then( function(data) {
+                //         for(var i =0; i<data.length; i++){
+                //             if(data[i].year === d3.select('p#value-simple').text()){
+                //                 $('#chart').empty();
+                //                 var limit = 5 + (d3.select('p#value-simple').text()-1960)**2*0.01
+                //                 drawWordCloud(data[i].female_lyric_stopwords ,limit);
+                //             }
+                //         }
+                //     });
+
+                var y = d3.select('p#value-simple').text();
+                updatewc_year_female(y, "from update_cat, female");
+            }
+
+        }
+
+
+    </script>
+</body>
+</html>

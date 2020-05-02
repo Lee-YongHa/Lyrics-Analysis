@@ -1,0 +1,442 @@
+{
+  "0": {
+    "amount":"1964",
+    "data": [
+      {"label":"그룹", "value":"10"},
+      {"label":"듀오", "value":"3"},
+      {"label":"솔로", "value":"87"}
+    ]
+  },
+  "1": {
+    "amount":"1965",
+    "data": [
+      {"label":"그룹", "value":"10"},
+      {"label":"듀오", "value":"6"},
+      {"label":"솔로", "value":"83"}
+        ]
+  },
+  "2": {
+    "amount":"1966",
+    "data": [
+      {"label":"그룹", "value":"10"},
+      {"label":"듀오", "value":"0"},
+      {"label":"솔로", "value":"90"}
+    ]
+  },
+  "3": {
+    "amount":"1967",
+    "data": [
+      {"label":"그룹", "value":"4"},
+      {"label":"듀오", "value":"0"},
+      {"label":"솔로", "value":"96"}
+    ]
+  },
+  "4": {
+    "amount":"1968",
+    "data": [
+      {"label":"그룹", "value":"4"},
+      {"label":"듀오", "value":"2"},
+      {"label":"솔로", "value":"94"}
+    ]
+  },
+  "5": {
+    "amount":"1969",
+    "data": [
+      {"label":"그룹", "value":"6"},
+      {"label":"듀오", "value":"6"},
+      {"label":"솔로", "value":"88"}
+    ]
+  },
+  "6": {
+    "amount":"1970",
+    "data": [
+      {"label":"그룹", "value":"8"},
+      {"label":"듀오", "value":"8"},
+      {"label":"솔로", "value":"84"}
+    ]
+  },
+  "7": {
+    "amount":"1971",
+    "data": [
+      {"label":"그룹", "value":"4"},
+      {"label":"듀오", "value":"8"},
+      {"label":"솔로", "value":"88"}
+    ]
+  },
+  "8": {
+    "amount":"1972",
+    "data": [
+      {"label":"그룹", "value":"6"},
+      {"label":"듀오", "value":"2"},
+      {"label":"솔로", "value":"92"}
+    ]
+  },
+  "9": {
+    "amount":"1973",
+    "data": [
+      {"label":"그룹", "value":"0"},
+      {"label":"듀오", "value":"10"},
+      {"label":"솔로", "value":"90"}
+    ]
+  },
+  "10": {
+    "amount":"1974",
+    "data": [
+      {"label":"그룹", "value":"6"},
+      {"label":"듀오", "value":"14"},
+      {"label":"솔로", "value":"80"}
+    ]
+  },
+  "11": {
+    "amount":"1975",
+    "data": [
+      {"label":"그룹", "value":"10"},
+      {"label":"듀오", "value":"12"},
+      {"label":"솔로", "value":"78"}
+    ]
+  },
+  "12": {
+    "amount":"1976",
+    "data": [
+      {"label":"그룹", "value":"8"},
+      {"label":"듀오", "value":"6"},
+      {"label":"솔로", "value":"86"}
+    ]
+  },
+  "13": {
+    "amount":"1977",
+    "data": [
+      {"label":"그룹", "value":"8"},
+      {"label":"듀오", "value":"4"},
+      {"label":"솔로", "value":"88"}
+    ]
+  },
+  "14": {
+    "amount":"1978",
+    "data": [
+      {"label":"그룹", "value":"18"},
+      {"label":"듀오", "value":"0"},
+      {"label":"솔로", "value":"82"}
+    ]
+  },
+  "15": {
+    "amount":"1979",
+    "data": [
+      {"label":"그룹", "value":"24"},
+      {"label":"듀오", "value":"2"},
+      {"label":"솔로", "value":"74"}
+    ]
+  },
+  "16": {
+    "amount":"1980",
+    "data": [
+      {"label":"그룹", "value":"22"},
+      {"label":"듀오", "value":"2"},
+      {"label":"솔로", "value":"76"}
+    ]
+  },
+  "17": {
+    "amount":"1981",
+    "data": [
+      {"label":"그룹", "value":"22"},
+      {"label":"듀오", "value":"6"},
+      {"label":"솔로", "value":"72"}
+    ]
+  },
+  "18": {
+    "amount":"1982",
+    "data": [
+      {"label":"그룹", "value":"16"},
+      {"label":"듀오", "value":"6"},
+      {"label":"솔로", "value":"78"}
+    ]
+  },
+  "19": {
+    "amount":"1983",
+    "data": [
+      {"label":"그룹", "value":"12"},
+      {"label":"듀오", "value":"6"},
+      {"label":"솔로", "value":"82"}
+    ]
+  },
+  "20": {
+    "amount":"1984",
+    "data": [
+      {"label":"그룹", "value":"10"},
+      {"label":"듀오", "value":"0"},
+      {"label":"솔로", "value":"90"}
+    ]
+  },
+  "21": {
+    "amount":"1985",
+    "data": [
+      {"label":"그룹", "value":"14"},
+      {"label":"듀오", "value":"7"},
+      {"label":"솔로", "value":"79"}
+    ]
+  },
+  "22": {
+    "amount":"1986",
+    "data": [
+      {"label":"그룹", "value":"17"},
+      {"label":"듀오", "value":"10"},
+      {"label":"솔로", "value":"73"}
+    ]
+  },
+  "23": {
+    "amount":"1987",
+    "data": [
+      {"label":"그룹", "value":"14"},
+      {"label":"듀오", "value":"8"},
+      {"label":"솔로", "value":"78"}
+    ]
+  },
+  "24": {
+    "amount":"1988",
+    "data": [
+      {"label":"그룹", "value":"21"},
+      {"label":"듀오", "value":"4"},
+      {"label":"솔로", "value":"75"}
+    ]
+  },
+  "25": {
+    "amount":"1989",
+    "data": [
+      {"label":"그룹", "value":"9"},
+      {"label":"듀오", "value":"5"},
+      {"label":"솔로", "value":"86"}
+    ]
+  },
+  "26": {
+    "amount":"1990",
+    "data": [
+      {"label":"그룹", "value":"11"},
+      {"label":"듀오", "value":"5"},
+      {"label":"솔로", "value":"84"}
+    ]
+  },
+  "27": {
+    "amount":"1991",
+    "data": [
+      {"label":"그룹", "value":"5"},
+      {"label":"듀오", "value":"8"},
+      {"label":"솔로", "value":"87"}
+    ]
+  },
+  "28": {
+    "amount":"1992",
+    "data": [
+      {"label":"그룹", "value":"7"},
+      {"label":"듀오", "value":"7"},
+      {"label":"솔로", "value":"86"}
+    ]
+  },
+  "29": {
+    "amount":"1993",
+    "data": [
+      {"label":"그룹", "value":"17"},
+      {"label":"듀오", "value":"13"},
+      {"label":"솔로", "value":"70"}
+    ]
+  },
+  "30": {
+    "amount":"1994",
+    "data": [
+      {"label":"그룹", "value":"23"},
+      {"label":"듀오", "value":"13"},
+      {"label":"솔로", "value":"64"}
+    ]
+  },
+  "31": {
+    "amount":"1995",
+    "data": [
+      {"label":"그룹", "value":"29"},
+      {"label":"듀오", "value":"14"},
+      {"label":"솔로", "value":"57"}
+    ]
+  },
+  "32": {
+    "amount":"1996",
+    "data": [
+      {"label":"그룹", "value":"30"},
+      {"label":"듀오", "value":"18"},
+      {"label":"솔로", "value":"52"}
+    ]
+  },
+  "33": {
+    "amount":"1997",
+    "data": [
+      {"label":"그룹", "value":"33"},
+      {"label":"듀오", "value":"17"},
+      {"label":"솔로", "value":"5"}
+    ]
+  },
+  "34": {
+    "amount":"1998",
+    "data": [
+      {"label":"그룹", "value":"39"},
+      {"label":"듀오", "value":"6"},
+      {"label":"솔로", "value":"55"}
+    ]
+  },
+  "35": {
+    "amount":"1999",
+    "data": [
+      {"label":"그룹", "value":"30"},
+      {"label":"듀오", "value":"10"},
+      {"label":"솔로", "value":"60"}
+    ]
+  },
+  "36": {
+    "amount":"2000",
+    "data": [
+      {"label":"그룹", "value":"29"},
+      {"label":"듀오", "value":"8"},
+      {"label":"솔로", "value":"63"}
+    ]
+  },
+  "37": {
+    "amount":"2001",
+    "data": [
+      {"label":"그룹", "value":"20"},
+      {"label":"듀오", "value":"11"},
+      {"label":"솔로", "value":"69"}
+    ]
+  },
+  "38": {
+    "amount":"2002",
+    "data": [
+      {"label":"그룹", "value":"27"},
+      {"label":"듀오", "value":"13"},
+      {"label":"솔로", "value":"60"}
+    ]
+  },
+  "39": {
+    "amount":"2003",
+    "data": [
+      {"label":"그룹", "value":"29"},
+      {"label":"듀오", "value":"8"},
+      {"label":"솔로", "value":"63"}
+    ]
+  },
+  "40": {
+    "amount":"2004",
+    "data": [
+      {"label":"그룹", "value":"29"},
+      {"label":"듀오", "value":"5"},
+      {"label":"솔로", "value":"66"}
+    ]
+  },
+  "41": {
+    "amount":"2005",
+    "data": [
+      {"label":"그룹", "value":"35"},
+      {"label":"듀오", "value":"8"},
+      {"label":"솔로", "value":"57"}
+    ]
+  },
+  "42": {
+    "amount":"2006",
+    "data": [
+      {"label":"그룹", "value":"35"},
+      {"label":"듀오", "value":"7"},
+      {"label":"솔로", "value":"58"}
+    ]
+  },
+  "43": {
+    "amount":"2007",
+    "data": [
+      {"label":"그룹", "value":"38"},
+      {"label":"듀오", "value":"6"},
+      {"label":"솔로", "value":"56"}
+    ]
+  },
+  "44": {
+    "amount":"2008",
+    "data": [
+      {"label":"그룹", "value":"40"},
+      {"label":"듀오", "value":"10"},
+      {"label":"솔로", "value":"50"}
+    ]
+  },
+  "45": {
+    "amount":"2009",
+    "data": [
+      {"label":"그룹", "value":"48"},
+      {"label":"듀오", "value":"8"},
+      {"label":"솔로", "value":"44"}
+    ]
+  },
+  "46": {
+    "amount":"2010",
+    "data": [
+      {"label":"그룹", "value":"49"},
+      {"label":"듀오", "value":"7"},
+      {"label":"솔로", "value":"44"}
+    ]
+  },
+  "47": {
+    "amount":"2011",
+    "data": [
+      {"label":"그룹", "value":"50"},
+      {"label":"듀오", "value":"15"},
+      {"label":"솔로", "value":"35"}
+    ]
+  },
+  "48": {
+    "amount":"2012",
+    "data": [
+      {"label":"그룹", "value":"56"},
+      {"label":"듀오", "value":"6"},
+      {"label":"솔로", "value":"38"}
+    ]
+  },
+  "49": {
+    "amount":"2013",
+    "data": [
+      {"label":"그룹", "value":"33"},
+      {"label":"듀오", "value":"20"},
+      {"label":"솔로", "value":"47"}
+    ]
+  },
+  "50": {
+    "amount":"2014",
+    "data": [
+      {"label":"그룹", "value":"35"},
+      {"label":"듀오", "value":"10"},
+      {"label":"솔로", "value":"55"}
+    ]
+  },
+  "51": {
+    "amount":"2015",
+    "data": [
+      {"label":"그룹", "value":"43"},
+      {"label":"듀오", "value":"6"},
+      {"label":"솔로", "value":"51"}
+    ]
+  },
+  "52": {
+    "amount":"2016",
+    "data": [
+      {"label":"그룹", "value":"33"},
+      {"label":"듀오", "value":"7"},
+      {"label":"솔로", "value":"60"}
+    ]
+  },
+  "53": {
+    "amount":"2017",
+    "data": [
+      {"label":"그룹", "value":"32"},
+      {"label":"듀오", "value":"14"},
+      {"label":"솔로", "value":"54"}
+    ]
+  },
+  "54": {
+    "amount":"2018",
+    "data": [
+      {"label":"그룹", "value":"36"},
+      {"label":"듀오", "value":"12"},
+      {"label":"솔로", "value":"52"}
+    ]
+  }
+}

@@ -1,0 +1,102 @@
+<html>
+<head>
+    <meta charset="UTF-8" />
+    <title>Highcharts Bar Chart</title>
+    <script src="http://apps.bdimg.com/libs/jquery/2.1.4/jquery.min.js"></script>
+    <script src="http://code.highcharts.com/highcharts.js"></script>
+</head>
+<body>
+<div id="container" style="width: 1000px; height: 500px; margin: 0 auto"></div>
+<script language="JavaScript">
+    $(document).ready(function() {
+        var chart = {
+            type: 'line'
+        };
+        var title = {
+            text: 'runtime, lyric chart'
+        };
+        var subtitle = {
+            text: '비교'
+        };
+        var xAxis = {
+            categories: ['1960년대','','','','','','1970년대','','','','','','','','','','1980년대',
+            '','','','','','','','','','1990년대','','','','','','','','','','2000년대',
+            '','','','','','','','','','2010년대','','','','','','','','','']
+        };
+        var yAxis = [{// Primary yAxis
+            min: 170,
+            max: 255,
+            title: {
+                text: 'Runtime (s)',
+                align: 'high'
+            },
+            labels: {
+                overflow: 'justify'
+            }
+        }, {
+            min: 0,
+            max: 4,
+            title: {// Scondary yAxis
+                text: 'lyric per runtime',
+                align: 'high'
+            },
+            labels: {
+                overflow: 'justify'
+            },
+        opposite: true
+        }];
+       
+        var tooltip = {
+            valueSuffix: '',
+            shared:true
+        };
+        var plotOptions = {
+            bar: {
+                dataLabels: {
+                    enabled: true
+                }
+            }
+        };
+        var legend = {
+            layout: 'vertical',
+            align: 'left',
+            verticalAlign: 'top',
+            x: 70,
+            y: 60,
+            floating: true,
+            borderWidth: 0,
+            backgroundColor: ((Highcharts.theme && Highcharts.theme.legendBackgroundColor) || 'rgba(255,255,255,0.25)'),
+            shadow: false
+        };
+        var credits = {
+            enabled: false
+        };
+        var series= [{
+            name: 'runtime',
+            data: [174.633333333333,175.066666666666,173.925,177.66,181.24,179.76,179.1,183.8,190.62,185.612244897959,201.551020408163,184.061224489795,191.24,197.82,212.34,205.983050847457,210.64,213.82,204.46,213,226.84,224.8,225.3,234.55,240,244.43,240.04,247.91,243.46,248.64,247.63,248.29,251.96,247.13,251.16,246.1,245.86,251.52,246.36,242.97,243.6,244.35,241.44,241.3,231.5,221,219.15,218.72,223.54,218.65,225.36,213.64,222.72,217.38,230.49]
+
+        }, {
+            name: 'lyric per runtime',
+            yAxis: 1,
+            data: [0.80050080640678,0.76932349152878,0.706784330358453,0.719339372446725,0.687395200710895,0.771939345521144,0.873105240582553,0.862433884563003,0.800373334503368,1.07514797566229,0.970536554337395,0.918318414116222,0.809250334625163,0.812889769640605,0.816323419129329,0.927964743842681,0.853120179062737,0.87456245642817,0.929551285357034,1.04355864062763,0.869517120219605,0.977687091818215,0.930770694800353,0.966929680334267,0.907414928046174,0.920029426071505,0.954013980508425,0.957662285907697,1.05801950710798,1.11903634733818,1.16809216736362,1.32840213700346,1.39336643625811,1.56529743499971,1.54534740437625,1.90619717629976,1.8503529913307,1.87839961250844,2.13686931597224,2.15518162645367,2.21237229896435,2.2020613637237,2.20591719235322,2.1282882597521,2.52252283961044,3.20914326743118,3.32023754434674,3.06908830028402,2.94579409089093,2.80382086360261,2.64581833459791,3.11725250042131,2.64991208319028,2.76411753124253,2.57621935600263]
+
+        }
+        ];
+
+        var json = {};
+        json.chart = chart;
+        json.title = title;
+        json.subtitle = subtitle;
+        json.tooltip = tooltip;
+        json.xAxis = xAxis;
+        json.yAxis = yAxis;
+        json.series = series;
+        json.plotOptions = plotOptions;
+        json.legend = legend;
+        json.credits = credits;
+        $('#container').highcharts(json);
+
+    });
+</script>
+</body>
+</html>

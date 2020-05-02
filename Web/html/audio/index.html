@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>audio.js</title>
+    <script src="./audiojs/audio.min.js"></script>
+    <link rel="stylesheet" href="./includes/index.css" media="screen">
+    <script>
+      audiojs.events.ready(function() { 
+        audiojs.createAll();
+      });
+    </script>
+  </head>
+  <body>
+    <header>
+      <h1>audio.js</h1>
+    </header>
+
+    <audio src="http://kolber.github.io/audiojs/demos/mp3/juicy.mp3" preload="auto"></audio>
+
+    <footer>
+      <p class="ab-c"><em>&real;</em> Another <a href='http://ab-c.com.au'>ab+c</a> joint</p>
+    </footer>
+  </body>
+</html>
