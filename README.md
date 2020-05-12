@@ -13,7 +13,8 @@
 
   #### *Step*
 
-  	1. 다양한 기준으로 구분해 시대별 가사 양상 분석
+  ​	1. 다양한 기준으로 구분해 시대별 가사 양상 분석
+  
    	2. 분석 결과를 차트, wordcloud 등 다양한 형태로 시각화
    	3. Web 상에 분석 결과 interactive하게 구현
 
@@ -29,11 +30,11 @@
 ### *Tech/Framework Used*
 
 - Crawling
-  - **Selenium**
+  - <u>**Selenium**</u>
 - Analysis
-  - **Matplotlib**
-  - **Seaborn**
-  - **Konlpy**
+  - <u>**Matplotlib**</u>
+  - <u>**Seaborn**</u>
+  - <u>**Konlpy**</u>
   - TF-IDF
   - H-P Point
 - Web
