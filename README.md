@@ -3,7 +3,7 @@
 
 <br>
 
-### *Goal*
+### 🚩 *Goal*
 
 - 시대별로 유행했던 노래의 가사를 당시 시대상과 연관지어 분석
 
@@ -11,7 +11,7 @@
 
   <br>
 
-  #### *Step*
+  #### 💡 *Step*
 
   ​	1. 다양한 기준으로 구분해 시대별 가사 양상 분석
   
@@ -20,14 +20,14 @@
 
 <br>
 
-### *Data Used*
+### 📁 *Data Used*
 
 - Bugs : 55년간(1964~2018) 차트 연간 1-100위
 - Billboard : 51년간(1965-2015) 차트 연간 1-100위
 
 <br>
 
-### *Tech/Framework Used*
+### 🔑 *Tech/Framework Used*
 
 - Crawling
   - <u>**Selenium**</u>
