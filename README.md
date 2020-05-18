@@ -29,12 +29,14 @@
 
 ### 🔑 *Tech/Framework Used*
 
+(참여한 과정 : ✔)
+
 - Crawling
-  - <u>**Selenium**</u>
+  - Selenium ✔
 - Analysis
-  - <u>**Matplotlib**</u>
-  - <u>**Seaborn**</u>
-  - <u>**Konlpy**</u>
+  - Matplotlib ✔
+  - Seaborn ✔
+  - Konlpy ✔
   - TF-IDF
   - H-P Point
 - Web
