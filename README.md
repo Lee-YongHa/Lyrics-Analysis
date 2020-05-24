@@ -34,8 +34,9 @@
 - Crawling
   - Selenium ✔
 - Analysis
-  - Matplotlib ✔
-  - Seaborn ✔
+  - Matplotlib
+  - Seaborn
+  - NLTK ✔
   - Konlpy ✔
   - TF-IDF
   - H-P Point
