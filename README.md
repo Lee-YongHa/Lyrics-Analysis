@@ -34,8 +34,8 @@
 - Crawling
   - Selenium ✔
 - Analysis
-  - Matplotlib
-  - Seaborn
+  - Matplotlib ✔
+  - Seaborn ✔
   - NLTK ✔
   - Konlpy ✔
   - TF-IDF
